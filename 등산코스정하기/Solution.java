@@ -71,6 +71,7 @@ import java.util.stream.*;
                 return this.intensity - o.intensity;
             }
         }
+    }
 
         static class Edge {
             int node;
