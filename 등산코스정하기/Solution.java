@@ -56,7 +56,7 @@ import java.util.stream.*;
 
             return minIntensity;
         }
-
+:
         static class Entry implements Comparable<Entry> {
             int intensity;
             int node;
