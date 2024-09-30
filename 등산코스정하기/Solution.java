@@ -17,7 +17,7 @@ import java.util.stream.*;
                 graph.get(path[0]).add(new Edge(path[1], path[2]));
                 graph.get(path[1]).add(new Edge(path[0], path[2]));
             }
-            {}
+            
             //✅ 모든 출입구를 우선순위큐에 삽입한다.
             Queue<Entry> hq = new PriorityQueue<>();
             int[] visited = new int[n + 1];
