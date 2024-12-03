@@ -23,6 +23,6 @@ public class MaxMin2 {
 
     public static void main(String[] args) {
         MaxMin2 maxMin2 = new MaxMin2();
-        System.out.println((MaxMin2.solution("5 6 7 8 9")));
+        System.out.println((maxMin2.solution("5 6 7 8 9")));
     }
 }

@@ -28,7 +28,7 @@ public class SelctionSortDescending {
         System.out.println("정렬 전: " + Arrays.toString(arr));
 
         //선택 정렬(내림차순) 수행
-        SelctionSortDescending(arr);
+        selctionSortDescending(arr);
 
         //정렬 결과 출력
         System.out.println("내림차순 정렬: " + Arrays.toString(arr));
