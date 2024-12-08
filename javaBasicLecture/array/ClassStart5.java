@@ -1,6 +1,6 @@
 package javaBasicLecture.array;
 
-public class ClassStart4 {
+public class ClassStart5 {
 
 
         public static void main(String[] args) {
@@ -15,12 +15,13 @@ public class ClassStart4 {
             student2.age = 16;
             student2.grade = 80;
 
-            Student[] students = new Student[2];
-            students[0] = student1;
-            students[1] = student2;
+            Student[] students = new Student[] {student1, student2};
 
-            System.out.println("이름: " + students[0].name + " 나이: " + students[0].age + " 성적: " + students[0].grade);
-            System.out.println("이름: " + students[1].name + " 나이: " + students[1].age + " 성적: " + students[1].grade);
+            for (int i = 0; i < students.length; i++) {
+                System.out.println("이름: " + students[i].name + " 나이: " + students[i].age + " 성적: " + students[i].grade);
+            }
+
+       
 
 
 
