@@ -22,6 +22,10 @@ public class ClassStart5 {
                 System.out.println("이름: " + s.name + " 나이: " + s.age + " 성적: " + s.grade);
             }
 
+            for (Student s : students) {
+                System.out.println("이름: " + s.name + " 나이: " + s.age + " 성적: " + s.grade);
+            }
+
 
 
 
