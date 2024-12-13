@@ -1,4 +1,4 @@
-package Array;
+package array;
 
 public class Length2 {
     public int[] solution(int[] numbers, int num1, int num2) {

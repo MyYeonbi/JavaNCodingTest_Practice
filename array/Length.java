@@ -1,4 +1,4 @@
-package Array;
+package array;
 
 public class Length {
     public int[] solution(String[] strlist) {

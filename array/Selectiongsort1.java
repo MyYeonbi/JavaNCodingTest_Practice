@@ -1,5 +1,5 @@
-package Array;
-import java.util.Arrays;
+package array;
+
 public class Selectiongsort1 {
     public static void selctionSort(int[] arr) {
         int n = arr.length;
