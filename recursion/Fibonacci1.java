@@ -13,9 +13,9 @@ public class Fibonacci1 {
     public static void main(String[] args) {
         int num = 20;
 
-        
+        Fibonacci1 fibo1 = new Fibonacci1();
 
-        System.out.println(new Fibonacci1().solution(num)); //팥붕어빵 1번 (count =6,solution =3 들어있음)
-        System.out.println("총 재귀 몇 번 : " + new Fibonacci1().count); //팥붕어빵 2번 (count = 0,solution = 0 들어있음 - 팥붕어빵 1번의 count와 solution과는 다른것.)
+        System.out.println(fibo1.solution(num)); //팥붕어빵 1번 (count =6,solution =3 들어있음)
+        System.out.println("총 재귀 몇 번 : " + fibo1.count); //팥붕어빵 2번 (count = 0,solution = 0 들어있음 - 팥붕어빵 1번의 count와 solution과는 다른것.)
     }
 }
