@@ -16,12 +16,7 @@ public class MusicPlayerMain2 {
         volumedown(data);
 
         //음악 플레이어 상태
-        System.out.println("음악 플레이어 상태 확인");
-        if (data.isOn) {
-            System.out.println("음악 플레이어 ON, 볼륨:" + data.volume);
-        }else {
-            System.out.println("음악 플레이어 OFF");
-        }
+        showStatus(data);
 
         // 음악 플레이어 끄기
         off(data);
@@ -43,5 +38,14 @@ public class MusicPlayerMain2 {
         data.volume--;
         System.out.println("음악 플레이어 볼륨" + data.volume);
 
+    }
+
+    static void showStatus(MusicPlayerData data) {
+        System.out.println("음악 플레이어 상태 확인");
+        if (data.isOn) {
+            System.out.println("음악 프레이어 ON, 볼륨:" + data.volume);
+        } else {
+            System.out.println("음악 플레이어 OFF");
+        }
     }
 }
