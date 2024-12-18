@@ -9,14 +9,11 @@ public class MusicPlayerMain2 {
         on(data);
 
         //볼륨 증가
-        data.volume++;
-        System.out.println("음악 플레이어 볼륨" + data.volume);
+        volunmeup(data);
         //볼륨 증가
-        data.volume++;
-        System.out.println("음악 플레이어 볼륨" + data.volume);
+        volunmeup(data);
         //볼륨 감소
-        data.volume--;
-        System.out.println("음악 플레이어 볼륨" + data.volume);
+        volumedown(data);
 
         //음악 플레이어 상태
         System.out.println("음악 플레이어 상태 확인");
@@ -37,5 +34,14 @@ public class MusicPlayerMain2 {
     static void off(MusicPlayerData data) {
         data.isOn = false;
         System.out.println("음악 플레이어를 종료합니다. ");
+    }
+    static void volunmeup(MusicPlayerData data) {
+        data.volume++;
+        System.out.println("음악 플레이어 볼륨" + data.volume);
+    }
+    static void volumedown(MusicPlayerData data) {
+        data.volume--;
+        System.out.println("음악 플레이어 볼륨" + data.volume);
+
     }
 }
