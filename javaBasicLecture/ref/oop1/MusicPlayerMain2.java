@@ -6,8 +6,7 @@ public class MusicPlayerMain2 {
 
 
         // 음악 플레이어 켜기
-        data.isOn =true;
-        System.out.println("음악 플레이어를 시작합니다.");
+        on(data);
 
         //볼륨 증가
         data.volume++;
@@ -28,7 +27,15 @@ public class MusicPlayerMain2 {
         }
 
         // 음악 플레이어 끄기
+        off(data);
+    }
+
+    static void on(MusicPlayerData data) {
+        data.isOn = true;
+        System.out.println("음악 플레이어를 시작합니다. ");
+    }
+    static void off(MusicPlayerData data) {
         data.isOn = false;
-        System.out.println("음악 플레이어를 종료합니다.");
+        System.out.println("음악 플레이어를 종료합니다. ");
     }
 }
