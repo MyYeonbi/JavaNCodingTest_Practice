@@ -7,6 +7,7 @@ public class MemberConstruct {
 
     //추가
     MemberConstruct(String name, int age) {
+        System.out.println("hello");
         this(name, age, 50); //변경
 
     }
