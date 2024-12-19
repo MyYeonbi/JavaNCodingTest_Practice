@@ -5,8 +5,11 @@ public class Book {
     String author;
     int pages;
 
+    Book(){
+    }
+
     Book(String title, String author) {
-        this(title, author, 1);
+        this(title, author, 0);
     }
 
     Book(String title, String author, int pages) {
@@ -14,7 +17,7 @@ public class Book {
         this.author = author;
         this.pages = pages;
     }
-    public void displayinfo(){
-        System.out.println("Title: " + this.title+" Author: " + this.author+" Pages: " + this.pages);
+    public void displayInfo(){
+        System.out.println("제목: " + this.title+" 저자: " + this.author+" 페이지: " + this.pages);
     }
 }
