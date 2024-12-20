@@ -10,5 +10,3 @@ public class Person {
         this.age = age;
     }
 }
-// 사용
-Person person = new Person("Alice", 25);
