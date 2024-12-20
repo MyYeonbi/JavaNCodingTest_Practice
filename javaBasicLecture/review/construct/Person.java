@@ -1,4 +1,4 @@
-package javaBasicLecture.review;
+package javaBasicLecture.review.construct;
 
 public class Person {
     String name;
