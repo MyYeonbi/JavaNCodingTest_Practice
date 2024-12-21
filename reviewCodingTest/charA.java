@@ -7,5 +7,8 @@ public class charA {
         char[] charArray = str.toCharArray();
 
         System.out.println(charArray[1]);
+
+        String str2 = new String(charArray);
+        System.out.println(str2);
     }
 }
