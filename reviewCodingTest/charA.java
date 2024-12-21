@@ -10,5 +10,9 @@ public class charA {
 
         String str2 = new String(charArray);
         System.out.println(str2);
+
+        StringBuilder sb = new StringBuilder("hello");
+        String reversed = sb.reverse().toString();
+        System.out.println(reversed);
     }
 }
