@@ -13,7 +13,11 @@ public class CutArr {
         int[] numbers = {1,2,3,4,5,6,7,8,9};
         int num1 = 2;
         int num2 = 6;
-        System.out.println(solution(numbers,num1,num2).toString());
+
+        CutArr cutArr = new CutArr();
+        int[] result = cutArr.solution(numbers, num1, num2);
+        
+        System.out.println(java.util.Arrays.toString(result));
     }
 }
 
