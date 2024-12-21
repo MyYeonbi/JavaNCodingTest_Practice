@@ -16,7 +16,7 @@ public class CutArr {
 
         CutArr cutArr = new CutArr();
         int[] result = cutArr.solution(numbers, num1, num2);
-        
+
         System.out.println(java.util.Arrays.toString(result));
     }
 }
