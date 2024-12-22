@@ -11,6 +11,7 @@ public class AccessInnerMain {
         data.publicField = 2;
         data.defaultMethod();
 
-        //
+        //private 호출 불가
+        data.privateField = 3;
     }
 }
