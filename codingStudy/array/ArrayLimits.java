@@ -21,5 +21,15 @@ public class ArrayLimits {
         }
         System.out.println(Arrays.toString(numbers3));
         //3. 배열에서 중간값(5) 삭제하는 경우
+        int[] numbers4 = new int[numbers.length-1];
+
+        for(int i = 0; i < 4; i++){
+            numbers4[i] = numbers[i];
+        }
+        for(int i = 5; i < numbers4.length; i++){
+            numbers4[i-1] = numbers[i];
+        }
+        numbers = numbers4;
+        System.out.println(Arrays.toString(numbers));
     }
 }
