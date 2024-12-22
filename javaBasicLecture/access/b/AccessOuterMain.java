@@ -2,7 +2,7 @@ package javaBasicLecture.access.b;
 
 import javaBasicLecture.access.a.AccessData;
 
-public class AccessOuterMain {
+public class AccessOuterMain2 {
     public static void main(String[] args) {
         AccessData data = new AccessData();
         //public 호출 가능
