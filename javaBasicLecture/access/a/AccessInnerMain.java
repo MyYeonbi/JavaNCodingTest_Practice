@@ -12,6 +12,9 @@ public class AccessInnerMain {
         data.defaultMethod();
 
         //private 호출 불가
-        data.privateField = 3;
+        //data.privateField = 3;
+        //data.privateMethod();
+
+        data.innerAccess();
     }
 }
