@@ -21,6 +21,24 @@ public class ListFundamental {
         numbers.remove(3);
         numbers.remove(Integer.valueOf(10));
         System.out.println(numbers);
-        //3.
+        //3. 배열에서 중간값(5) 삭제하는 경우
+        numbers.remove(Integer.valueOf(5));
+        System.out.println(numbers);
+        //4. 특정 위치에 값 추가.
+        numbers.add(4,5);
+        System.out.println(numbers);
+
+        //5. 특정 값의 위치 찾기
+        int findIdx = numbers.indexOf(5);
+        System.out.println(findIdx);
+        numbers.set(findIdx, 555);
+        System.out.println(numbers);
+
+        // 6 리스트 크기 확인
+        System.out.println("리스트의 크기는 ? :" + numbers.size());
+        // 리스트가 비어있는지 확인
+        System.out.println("리스트가 비었은지? : " + numbers.isEmpty());
+        //8. 특정 값이 포함되어 있는지 확인
+        System.out.println("특정 값이 리스트에 포함되어있는지? : "+numbers.contains(9) );
     }
 }
