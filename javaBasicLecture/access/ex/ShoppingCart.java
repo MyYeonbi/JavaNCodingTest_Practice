@@ -21,7 +21,7 @@ public class ShoppingCart {
             return;
         }
     }
-    public void Item (name, price, quantity){
+    public void displayItem (name, price, quantity){
         System.out.println(this.name + " " + this.price + " " + this.quantity);
     }
 }
