@@ -13,6 +13,11 @@ public class DecoData {
 
     }
 
+    public static void staticCall(DecoData data) {
+        data.instanceValue++;
+        data.instanceMethod();
+    }
+
     public void instanceCall() {
         instanceValue++; //static이 없는 메서드는 인스턴스 변수 접근 가능!
         instanceMethod(); // 인스턴스 메서드도 당연히 접근 가능!
