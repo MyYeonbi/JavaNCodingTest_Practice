@@ -1,8 +1,9 @@
 package javaBasicLecture.static2.ex;
 
-import javaBasicLecture.review.construct.Car;
-
 public class CarMain {
+
+    public CarMain() {
+    }
 
     public static void main(String[] args) {
         Car car1 = new Car("K3");
@@ -18,5 +19,5 @@ public class CarMain {
         구매한 차량 수 : 3
          */
     }
-    
+
 }

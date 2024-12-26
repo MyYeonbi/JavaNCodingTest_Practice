@@ -2,13 +2,18 @@ package javaBasicLecture.static2.ex;
 
 public class Car {
 
-    private String model;
+    private static int totalCars;
+    private String name;
 
-    public Car(String model) {
-        this.model = model;
+    public Car(String name) {
+        System.out.println("차량 구입, 이름 :" +name);
+        this.name = name;
+        totalCars++;
     }
 
-    public int showTotalCars(){
-        return this.model.length();
+    public static void showTotalCars() {
+        System.out.println("구매한 차량 수:" + totalCars);
     }
+
+
 }
