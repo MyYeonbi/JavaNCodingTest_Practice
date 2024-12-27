@@ -20,7 +20,9 @@ public class FinalLocalMain {
         System.out.println(finalInit2.value);
         System.out.println(finalInit3.value);
 
-
+        //상수
+        System.out.println("상수");
+        System.out.println(FinalInit.CONST_VALUE);
     }
 
 
