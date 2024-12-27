@@ -24,7 +24,9 @@ public class FinalLocalMain {
         System.out.println("상수");
         System.out.println(FinalInit.CONST_VALUE);
 
-        Construct.PI;
+       
+
+        System.out.println(Construct.PI);
     }
 
 
