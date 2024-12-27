@@ -3,18 +3,14 @@ package javaBasicLecture.final1;
 public class FinalLocalMain {
 
     public static void main(String[] args) {
-        // final 지역 변수
-        final int data1;
-        data1 = 10; // 최초 한번반 할당 가능
-        //data1 = 20;
+       //final 필드 - 생성자 초기화
+        System.out.println("생성자 초기화");
+        ConstructInit constructInit1 = new ConstructInit(10);
+        ConstructInit constructInit2 = new ConstructInit(20);
+        System.out.println(constructInit1.value);
+        System.out.println(constructInit2.value);
 
-        //final 지역 변수 2
-        final int data2 = 10;
-        //data2 = 20; //컴파일 오류
-        method(10);
     }
 
-    static void method(final int parameter) {
-        // parameter = 20; // 컴파일 오류
-    }
+
 }
