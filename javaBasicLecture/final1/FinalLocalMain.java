@@ -10,6 +10,17 @@ public class FinalLocalMain {
         System.out.println(constructInit1.value);
         System.out.println(constructInit2.value);
 
+        //final 필드 - 필드 초기화
+        System.out.println("필드 초기화");
+        FinalInit finalInit1 = new FinalInit();
+        FinalInit finalInit2 = new FinalInit();
+        FinalInit finalInit3 = new FinalInit();
+
+        System.out.println(finalInit1.value);
+        System.out.println(finalInit2.value);
+        System.out.println(finalInit3.value);
+
+
     }
 
 
