@@ -7,6 +7,7 @@ public class FinalRefMain {
 
         //참조 대상의 값은 변경 가능.
         data.value = 10;
+        data.value = 20;
         System.out.println(data.value);
     }
 }
