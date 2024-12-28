@@ -1,4 +1,4 @@
-package array.stringArray;
+package array.stringArray.charat;
 
 public class CharAt1 {
     public static void main(String[] args) {
