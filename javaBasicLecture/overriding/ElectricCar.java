@@ -3,7 +3,7 @@ package javaBasicLecture.overriding;
 public class ElectricCar extends Car {
 
     @Override
-    public void move() {
+    public void moveee() {
         System.out.println("전기차를 빠르게 이동합니다.");
     }
 
