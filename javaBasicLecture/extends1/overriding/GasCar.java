@@ -1,4 +1,4 @@
-package javaBasicLecture.overriding;
+package javaBasicLecture.extends1.overriding;
 
 public class GasCar extends Car {
 

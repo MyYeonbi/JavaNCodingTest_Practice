@@ -1,8 +1,8 @@
-package javaBasicLecture.overriding;
+package javaBasicLecture.extends1.overriding;
 
 public class Car {
 
-    private void move() {
+    public void move() {
         System.out.println("차를 이동합니다.");
     }
 
