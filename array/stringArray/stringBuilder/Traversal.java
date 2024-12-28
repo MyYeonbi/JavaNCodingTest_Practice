@@ -10,6 +10,6 @@ public class Traversal {
         char c = sb.charAt(i);
         System.out.print(c);
     }
-    
+
     }
 }
