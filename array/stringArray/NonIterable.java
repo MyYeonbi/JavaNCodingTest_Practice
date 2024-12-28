@@ -1,4 +1,4 @@
-package array.stringArray.stringBuilder;
+package array.stringArray;
 import java.util.List;
 import java.util.ArrayList;
 public class NonIterable {
