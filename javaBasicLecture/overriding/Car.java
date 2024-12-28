@@ -2,7 +2,7 @@ package javaBasicLecture.overriding;
 
 public class Car {
 
-    public void move() {
+    public final void move() {
         System.out.println("차를 이동합니다.");
     }
 
