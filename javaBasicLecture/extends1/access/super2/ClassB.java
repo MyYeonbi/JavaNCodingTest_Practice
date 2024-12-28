@@ -3,7 +3,8 @@ package javaBasicLecture.extends1.access.super2;
 public class ClassB extends ClassA {
 
     public ClassB(int a) {
-        super(); // 기본 생성자 생략 가능
+        //super(); // 기본 생성자 생략 가능
+        this(a,0);
         System.out.println("ClassB 생성자 a =" +a);
     }
 
