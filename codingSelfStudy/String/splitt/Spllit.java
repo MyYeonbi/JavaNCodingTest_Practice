@@ -16,5 +16,12 @@ public class Spllit {
         int rotateBy = 2;
         String rotated = str1.substring(rotateBy)+str1.substring(0,rotateBy);
         System.out.println(rotated);  // 출력: cdeab
+
+        //2. 줄 단위 입력 처리 - 코테에서 여러 줄 입력을 처리할 때
+        String str2 = "line1\nline2\nline3";
+        String[] lines = str2.split("\n"); // 줄 단위로 나누기
+        for (String line : lines) {
+            System.out.println(line);
+        }
     }
 }
