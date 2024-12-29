@@ -19,6 +19,18 @@ public class parse {
 	•	16: 16진법 (hexadecimal)
          */
 
+        //3. 숫자 문자열의 연산 - 입력으로 받은 숫자 문자열을 변환 후 계산이 필요한 경우.
+        String input1 = "50";
+        String input2 = "100";
+        int re = Integer.parseInt(input1) + Integer.parseInt(input2);
+        System.out.println(re);
+
+        //4.배열 인덱스 계산 - 입력으로 주어진 숫자를 배열 인덱스 값으로 사용할 때.
+        String in = "3"; // 배열에서 사용할 인덱스
+        int index = Integer.parseInt(in);
+        int[] arr = {10, 20, 30, 40};
+        System.out.println(arr[index]);
+
         //코테에서 활용법
 
         //1. 입력 처리 - 여러 숫자가 공백으로 구분된 문자열로 주어지는 경우가 많다. 이를 숫자로 변환할 때 사용한다.
