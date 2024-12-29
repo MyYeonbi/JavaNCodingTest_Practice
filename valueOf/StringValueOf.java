@@ -37,7 +37,11 @@ public class StringValueOf {
     Object obj1 = null;
     String y1 = String.valueOf(obj1);
 
-    //4. 
+    //4. 숫자와 문자를 함께 처리
+    int num1 = 123;
+    char c1 = 'h';
+    String c2 = String.valueOf(num1) + String.valueOf(c1);
+
 
     public static void main(String[] args) {
         StringValueOf sv = new StringValueOf();
@@ -50,5 +54,6 @@ public class StringValueOf {
         System.out.println(sv.y);
         System.out.println(sv.w);
         System.out.println(sv.y1);
+        System.out.println(sv.c2);
     }
 }
