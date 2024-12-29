@@ -26,10 +26,15 @@ public class parse {
         String[] number = input.split(" "); // 공백으로 분리: 분리의 문법은 .split
         int sum = 0;
         for (String s : number) {
-            sum += Integer.parseInt(number); //문자열 -> 정수 변형 가능!
+            sum += Integer.parseInt(s); //문자열 -> 정수 변형 가능!
         }
-        System.out.println(sum);
+        System.out.println(sum); // 공백으로 구분된 문자열의 숫자들이 10+20+30으로 계산되어 출력값: 60
 
+        //2. char[]를 int형으로 바꾸기 위해서는 중간에 String으로 바꾸는 'String.valueOf()'가 필요.
+        char[] chars = {'1', '2', '3'};
+        String str1 = String.valueOf(chars);
+        int fi = Integer.parseInt(str1);
+        System.out.println(fi);
 
     }
 }
