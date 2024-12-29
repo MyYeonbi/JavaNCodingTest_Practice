@@ -25,11 +25,19 @@ public class StringValueOf {
     Object o = null;
     String f = String.valueOf(o);
 
-    //1. 문자 변환 및 조합 - char과 String의 값을 넣어줄때는 ''과 ""를 감싸줘야 한다. 
+    //1. 문자 변환 및 조합 - char과 String의 값을 넣어줄때는 ''과 ""를 감싸줘야 한다.
     char x = 'h';
     String y = String.valueOf(x) + "i";
 
+    //2. 문자 배열을 문자열로 변환 -
+    char [] z = {'w', 'e', 'l', 'l', 'o'};
+    String w = String.valueOf(z);
 
+    //3. 안전한 null처리
+    Object obj1 = null;
+    String y1 = String.valueOf(obj1);
+
+    //4. 
 
     public static void main(String[] args) {
         StringValueOf sv = new StringValueOf();
@@ -40,5 +48,7 @@ public class StringValueOf {
         System.out.println(sv.d);
         System.out.println(sv.o);
         System.out.println(sv.y);
+        System.out.println(sv.w);
+        System.out.println(sv.y1);
     }
 }
