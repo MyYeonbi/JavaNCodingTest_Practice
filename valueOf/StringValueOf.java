@@ -1,6 +1,6 @@
 package valueOf;
 
-public class StringValue {
+public class StringValueOf {
     // 문자(char)를 문자열로 변환
     char c = 'a';
     String str = String.valueOf(c);
@@ -25,14 +25,20 @@ public class StringValue {
     Object o = null;
     String f = String.valueOf(o);
 
+    //1. 문자 변환 및 조합 - char과 String의 값을 넣어줄때는 ''과 ""를 감싸줘야 한다. 
+    char x = 'h';
+    String y = String.valueOf(x) + "i";
+
+
 
     public static void main(String[] args) {
-        StringValue sv = new StringValue();
+        StringValueOf sv = new StringValueOf();
         System.out.println(sv.str);
         System.out.println(sv.ch);
         System.out.println(sv.s);
         System.out.println(sv.b);
         System.out.println(sv.d);
         System.out.println(sv.o);
+        System.out.println(sv.y);
     }
 }
