@@ -19,5 +19,7 @@ public class PolyMain {
         System.out.println("Parent -> Child");
         Parent poly = new Child(); // poly는 Parent타입, 참조는 Child타입.
         poly.parentMethod();
+
+        // Child child1 = new Parent(); // 자식은 부모를 담을 수 없다. 
     }
 }
