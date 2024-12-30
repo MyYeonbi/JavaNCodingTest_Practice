@@ -12,7 +12,7 @@ public class Book extends Item{
 
     @Override
     public void print() {
-        System.out.println("이름:" + name + ", 가격:" + price);
+        super.print();
         System.out.println("저자: " + author + ", isbn: " + isbn);
     }
 }
