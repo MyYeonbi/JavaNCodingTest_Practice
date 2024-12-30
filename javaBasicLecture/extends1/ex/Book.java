@@ -9,4 +9,10 @@ public class Book extends Item{
         this.author = author;
         this.isbn = isbn;
     }
+
+    @Override
+    public void print() {
+        super.print(); // 부모 클래스의 print 메서드 호출
+        System.out.println("저자: " + author + ", isbn: " + isbn);
+    }
 }
