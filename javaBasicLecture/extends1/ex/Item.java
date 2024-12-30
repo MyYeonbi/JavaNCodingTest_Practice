@@ -1,6 +1,6 @@
 package javaBasicLecture.extends1.ex;
 
-public final class Item {
+public  class Item {
     private String name;
     private int price;
 
@@ -14,7 +14,7 @@ public final class Item {
     }
 
 
-    public void print() {
+    public  void print() {
         System.out.println("이름: "+ name + ", 가격"+ price);
     }
 }
