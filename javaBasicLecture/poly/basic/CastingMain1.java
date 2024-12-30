@@ -9,7 +9,7 @@ public class CastingMain1 {
         // poly.childMethod();
 
         // 다운캐스팅(부모 타입 -> 자식 타입)
-        Child child = poly; // x001
+        Child child = (Child) poly; // x001
         child.childMethod();
     }
 }
