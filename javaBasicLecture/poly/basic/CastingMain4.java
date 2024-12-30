@@ -8,7 +8,7 @@ public class CastingMain4 {
         Child child1 = (Child) parent1; // 다운캐스팅
         child1.childMethod(); // 문제 없음
 
-        Parent parent2 = new Parent();
+        //Parent parent2 = new Parent();
         Child child2 = (Child) parent2;
         child2.childMethod();
     }
