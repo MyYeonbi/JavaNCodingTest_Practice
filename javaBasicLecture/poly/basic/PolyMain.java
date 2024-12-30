@@ -20,6 +20,8 @@ public class PolyMain {
         Parent poly = new Child(); // poly는 Parent타입, 참조는 Child타입.
         poly.parentMethod();
 
-        // Child child1 = new Parent(); // 자식은 부모를 담을 수 없다. 
+        // Child child1 = new Parent(); // 자식은 부모를 담을 수 없다.
+
+       // poly.childMethod(); // 자식의 기능은 호출할 수 없다. 
     }
 }
