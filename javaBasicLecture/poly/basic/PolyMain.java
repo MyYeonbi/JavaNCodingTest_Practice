@@ -18,10 +18,12 @@ public class PolyMain {
         // 부모 변수가 자식 인스턴스를 참조(다형적 참조)
         System.out.println("Parent -> Child");
         Parent poly = new Child(); // poly는 Parent타입, 참조는 Child타입.
+        //poly는 Parent 타입이기 때문에 Parent메모리와 Child메모리 중에서 Parent메모리부터 메서드를 찾는다. 
         poly.parentMethod();
 
         // Child child1 = new Parent(); // 자식은 부모를 담을 수 없다.
 
-       // poly.childMethod(); // 자식의 기능은 호출할 수 없다. 
+       // poly.childMethod(); // 자식의 기능은 호출할 수 없다.
+
     }
 }
