@@ -12,5 +12,6 @@ public class PolyMain {
         System.out.println("Child -> Child");
         Child child = new Child();
         child.parentMethod();
+        child.childMethod();
     }
 }
