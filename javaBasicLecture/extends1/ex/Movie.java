@@ -9,4 +9,10 @@ public class Movie extends Item{
         this.director = director;
         this.actor = actor;
     }
+
+    @Override
+    public void print() {
+        super.print();
+        System.out.println("감독 이름: "+this.director + " 배우 이름:" + this.actor);
+    }
 }
