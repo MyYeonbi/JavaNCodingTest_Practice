@@ -1,6 +1,6 @@
 package javaBasicLecture.extends1.ex;
 
-public class Item {
+public final class Item {
     private String name;
     private int price;
 
