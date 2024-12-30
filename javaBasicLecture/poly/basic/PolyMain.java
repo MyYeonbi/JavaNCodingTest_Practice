@@ -7,5 +7,10 @@ public class PolyMain {
         System.out.println("Parent -> Parent");
         Parent parent = new Parent();
         parent.parentMethod();
+
+         // 자식 변수가 자식 인스턴스 참조
+        System.out.println("Child -> Child");
+        Child child = new Child();
+        child.parentMethod();
     }
 }
