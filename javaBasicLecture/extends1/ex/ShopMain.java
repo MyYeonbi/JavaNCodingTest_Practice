@@ -1,6 +1,6 @@
 package javaBasicLecture.extends1.ex;
 
-import javaBasicLecture.construct.ex.Book;
+import javaBasicLecture.extends1.ex.Book;
 
 public class ShopMain {
 
