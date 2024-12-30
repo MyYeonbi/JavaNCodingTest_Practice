@@ -13,5 +13,11 @@ public class PolyMain {
         Child child = new Child();
         child.parentMethod();
         child.childMethod();
+
+        System.out.println("================================");
+        // 부모 변수가 자식 인스턴스를 참조(다형적 참조)
+        System.out.println("Parent -> Child");
+        Parent poly = new Child(); // poly는 Parent타입, 참조는 Child타입.
+        poly.parentMethod();
     }
 }
