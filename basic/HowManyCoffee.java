@@ -12,6 +12,6 @@ public class HowManyCoffee {
 
     public static void main(String[] args) {
         HowManyCoffee how = new HowManyCoffee();
-        System.out.println(Arrays.toString(how.solution(55000));
+        System.out.println(Arrays.toString(how.solution(55000)));
     }
 }
