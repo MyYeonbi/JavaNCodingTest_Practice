@@ -24,4 +24,19 @@ public class CastingMain5 {
             System.out.println(" Child 인스턴스 아님.");
         }
     }
+    /* 오른쪽 타입에 왼쪽에 있는 인스턴스의 타입이 들어갈 수 있는지 대입해보면 된다.
+    [ 인스턴스 + instanceof + 객체 타입]
+    대입이 가능하면 true, 불가능하면 false가 된다.
+    new Parent() instanceof Parent
+    Parent p = new Parent() - 같은 타입 true
+
+    new Child() instanceof Parent
+    Parent p = new Child() - 부모는 자식을 담을 수 있다. true
+
+    new Parent() instanceof Child
+    Child c = new Parent() - 자식은 부모를 담을 수 없다 . false
+
+    new Child() instanceof Child
+    Child c = new Child() - 같은 타입 true
+     */
 }
