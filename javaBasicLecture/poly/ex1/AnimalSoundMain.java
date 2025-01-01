@@ -7,11 +7,13 @@ public class AnimalSoundMain {
         Caw caw = new Caw();
         Cat cat = new Cat();
 
-        System.out.println("동물 소리 테스트 시작");
+        Caw[] cawArr = {dog, cat, caw};
+        
+         System.out.println("동물 소리 테스트 시작");
         dog.sound();
         System.out.println("동물 소리 테스트 종료");
 
-        
+
         soundCaw(caw);
        // soundCaw(cat);
 
