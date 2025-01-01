@@ -11,12 +11,17 @@ public class AnimalSoundMain {
         dog.sound();
         System.out.println("동물 소리 테스트 종료");
 
+        
+        soundCaw(caw);
+       // soundCaw(cat);
+
+        soundCat(cat);
+
+    }
+    private static void soundCat(Cat cat) {
         System.out.println("동물 소리 테스트 시작");
         cat.sound();
         System.out.println("동물 소리 테스트 종료");
-
-        soundCaw(caw);
-        soundCaw(cat);
 
     }
 
