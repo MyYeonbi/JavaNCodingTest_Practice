@@ -1,6 +1,6 @@
 package javaBasicLecture.poly.ex3;
 
-public abstract class AbstractAnimal {
+public class AbstractAnimal {
 
     public abstract void sound();
 }
