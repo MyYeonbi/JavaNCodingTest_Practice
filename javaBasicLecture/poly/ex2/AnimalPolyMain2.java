@@ -8,7 +8,9 @@ public class AnimalPolyMain2 {
 
         // 변하지 않는 부분
         for (Animal animal : animalArr) {
-            extracted(animal);
+            System.out.println("동물 소리 테스트 시작");
+            animal.sound();
+            System.out.println("동물 소리 테스트 종료");
 
         }
 
@@ -16,11 +18,6 @@ public class AnimalPolyMain2 {
 
     }
 
-    private static void extracted(Animal animal) {
-        System.out.println("동물 소리 테스트 시작");
-        animal.sound();
-        System.out.println("동물 소리 테스트 종료");
-    }
 
 
 }
