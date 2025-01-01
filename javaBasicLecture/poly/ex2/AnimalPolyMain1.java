@@ -5,7 +5,7 @@ public class AnimalPolyMain1 {
     public static void main(String[] args) {
         Animal dog = new Dog();
         Animal cat = new Cat();
-        Caw caw = new Caw();
+        Animal caw = new Caw();
 
 
 
