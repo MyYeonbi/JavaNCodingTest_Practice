@@ -2,12 +2,11 @@ package javaBasicLecture.poly.ex2;
 
 public class AnimalPolyMain2 {
     public static void main(String[] args) {
-        Animal dog = new Dog();
-        Animal cat = new Cat();
-        Animal caw = new Caw();
-        Animal duck = new Duck();
 
-        Animal[] animalArr = {dog, cat, caw, duck};
+        Animal caw = new Caw();
+
+
+        Animal[] animalArr = {new Dog(), new Cat(), caw, };
 
         // 변하지 않는 부분
         for (Animal animal : animalArr) {
