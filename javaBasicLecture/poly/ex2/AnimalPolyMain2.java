@@ -3,10 +3,8 @@ package javaBasicLecture.poly.ex2;
 public class AnimalPolyMain2 {
     public static void main(String[] args) {
 
-        Animal caw = new Caw();
 
-
-        Animal[] animalArr = {new Dog(), new Cat(), caw, };
+        Animal[] animalArr = {new Dog(), new Cat(), new Caw(), };
 
         // 변하지 않는 부분
         for (Animal animal : animalArr) {
