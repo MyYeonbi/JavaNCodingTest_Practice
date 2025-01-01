@@ -5,7 +5,7 @@ public class AnimalPolyMain3 {
         Animal a = new Animal();
         a.sound();
 
-        Animal[] animalArr = {new Dog(), new Cat(), new Caw(), };
+        Animal[] animalArr = {new Dog(), new Cat(), new Caw(), new Pig() };
 
         // 변하지 않는 부분
         for (Animal animal : animalArr) {
