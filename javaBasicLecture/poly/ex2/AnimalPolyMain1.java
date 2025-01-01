@@ -6,12 +6,14 @@ public class AnimalPolyMain1 {
         Animal dog = new Dog();
         Animal cat = new Cat();
         Animal caw = new Caw();
+        Animal duck = new Duck();
 
 
 
         soundAnimal(dog);
         soundAnimal(cat);
         soundAnimal(caw);
+        soundAnimal(duck);
     }
 
 
