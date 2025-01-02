@@ -1,4 +1,4 @@
-package javaBasicLecture.poly.ex4.ex5;
+package javaBasicLecture.poly.ex5;
 
 public class Dog implements InterFaceAnimal{
     @Override
