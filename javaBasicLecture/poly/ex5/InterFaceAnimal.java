@@ -7,4 +7,5 @@ public interface InterFaceAnimal {
     /*public void hello(){
         System.out.println("안녕하세요. 동물입니다. ");
     }*/
+    //다중구현
 }
