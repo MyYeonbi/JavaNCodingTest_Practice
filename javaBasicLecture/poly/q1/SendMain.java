@@ -6,7 +6,7 @@ public class SendMain {
 
         Sender[] senders = {new EmailSender(), new SmsSender(), new FaceBookSender()};
         for (Sender sender : senders) {
-            sender.sendMessage("환영합니다.");
+            sender.sendMessage("우리 홈페이지에 오신걸 환영합니다.");
         }
     }
 }
