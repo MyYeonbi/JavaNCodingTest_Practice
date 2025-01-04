@@ -21,13 +21,13 @@ public class PayService {
         }
     }
     public Pay findPay(String option) {
-        Pay pay;
+
         if (option.equals("kakao")) {
-            pay = new KakaoPay();
+            return new KakaoPay();
         } else if (option.equals("naver")) {
-            pay = new NaverPay();
+            return new NaverPay();
         } else {
-            pay = null;
+            return null;
             System.out.println("결제 수단이 없습니다.");
 
         }
