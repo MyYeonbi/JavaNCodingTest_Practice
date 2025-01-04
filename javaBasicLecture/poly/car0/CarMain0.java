@@ -6,6 +6,7 @@ public class CarMain0 {
         K3Car k3Car = new K3Car();
 
         driver.setK3Car(k3Car);
+        driver.drive();
 
     }
 }
