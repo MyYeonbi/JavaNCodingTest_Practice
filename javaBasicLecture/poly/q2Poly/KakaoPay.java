@@ -1,7 +1,6 @@
-package javaBasicLecture.poly.q2;
+package javaBasicLecture.poly.q2Poly;
 
-
-public class KakaoPay  {
+public class KakaoPay implements Pay {
 
     public boolean pay(int amount) {
         System.out.println("카카오페이 시스템과 연결합니다.");
