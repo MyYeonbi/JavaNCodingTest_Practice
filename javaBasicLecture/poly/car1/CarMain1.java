@@ -8,8 +8,8 @@ public class CarMain1 {
 
         //차량 선택(k3)
         K3Car k3Car = new K3Car();
-
         driver.setCar(k3Car);
+        driver.drive();
 
     }
 }
