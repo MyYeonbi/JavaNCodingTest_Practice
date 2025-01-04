@@ -6,16 +6,9 @@ public class PayService {
 
         boolean result = false;
         System.out.println("결제를 시작합니다: option = " + option + ", amount = " + amount);
-        Pay pay;
-        if (option.equals("kakao")) {
-            pay = new KakaoPay();
-        } else if (option.equals("naver")) {
-            pay = new NaverPay();
-        } else {
-            pay = null;
-            System.out.println("결제 수단이 없습니다.");
 
-        }
+        Pay pay = findPay(option);
+
         if (pay != null) {
             result = pay.pay(amount);
         }
@@ -26,5 +19,18 @@ public class PayService {
         }else {
             System.out.println("결제가 실패했습니다.");
         }
+    }
+    public Pay findPay(String option) {
+        Pay pay;
+        if (option.equals("kakao")) {
+            pay = new KakaoPay();
+        } else if (option.equals("naver")) {
+            pay = new NaverPay();
+        } else {
+            pay = null;
+            System.out.println("결제 수단이 없습니다.");
+
+        }
+        return pay;
     }
 }
