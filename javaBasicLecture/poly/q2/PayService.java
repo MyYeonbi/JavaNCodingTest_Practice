@@ -16,5 +16,11 @@ public class PayService {
             System.out.println("결제 수단이 없습니다.");
             result = false;
         }
+
+        if (result) {
+            System.out.println("결제가 성공했습니다.");
+        }else {
+            System.out.println("결제가 실패했습니다.");
+        }
     }
 }
