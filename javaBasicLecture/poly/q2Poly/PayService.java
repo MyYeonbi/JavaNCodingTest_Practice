@@ -9,9 +9,8 @@ public class PayService {
 
         Pay pay = PayStore.findPay(option);
 
-        if (pay != null) {
             result = pay.pay(amount);
-        }
+        
 
 
         if (result) {
