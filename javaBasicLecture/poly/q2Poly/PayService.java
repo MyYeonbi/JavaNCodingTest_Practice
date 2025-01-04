@@ -10,7 +10,7 @@ public class PayService {
         Pay pay = PayStore.findPay(option);
 
             result = pay.pay(amount);
-        
+
 
 
         if (result) {
