@@ -46,5 +46,22 @@ public class BasicQueExample {
         } catch (Exception e) {
             System.out.println("예외 발생 : 큐가 비어 있습니다. ");
         }
+
+        /* poll()이란 큐의 맨 앞 요소를 제거하고 반환하는 메서드이다.
+        큐가 비어 있을 경우, null을 반환한다.
+        remove()와 유사하지만 , 큐가 비었을때 동작이 다르다.
+        poll은 null 반환. remove는 NoSuchElementException 발생.
+         */
+
+        // 예제 3: 특정 데이터 포함 여부 확인
+        Queue<String> queue1 = new LinkedList<>();
+        queue1.add("apple");
+        queue1.add("banana");
+        queue1.add("orange");
+
+        System.out.println("큐 상태:" + queue1);
+        System.out.println("큐에 'banana'가 있는가?" + queue1.contains("banana"));
+        System.out.println("큐에 'grape'가 있는가?" + queue1.contains("grape"));
+
     }
 }
