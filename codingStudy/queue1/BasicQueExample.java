@@ -1,6 +1,8 @@
 package codingStudy.queue1;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Map;
+import java.util.LinkedHashMap;
 public class BasicQueExample {
     public static void main(String[] args) {
         Queue<Integer> queue = new LinkedList<>();
@@ -75,24 +77,52 @@ public class BasicQueExample {
         };
 
         boolean[] visited = new boolean[7];
-        Queue<Integer> queue = new LinkedList<>();
+        Queue<Integer> queue0 = new LinkedList<>();
 
         int startNode = 0; // 시작 노드
-        queue.add(startNode);
+        queue0.add(startNode);
         visited[startNode] = true;
 
         System.out.println("BFS 탐색 순서:");
-        while (!queue.isEmpty()) {
-            int current = queue.remove();
+        while (!queue0.isEmpty()) {
+            int current = queue0.remove();
             System.out.print(current + " ");
 
             for (int neighbor : graph[current]) {
                 if (!visited[neighbor]) {
-                    queue.add(neighbor);
+                    queue0.add(neighbor);
                     visited[neighbor] = true;
                 }
             }
 
+        }
+
+        // 꼭 알아야 할 예제: 캐시 구현 (LRU 알고리즘)
+         class LRUCache<K, V> extends LinkedHashMap<K, V> {
+            private final int capacity;
+
+            public LRUCache(int capacity) {
+                super(capacity, 0.75f, true);
+                this.capacity = capacity;
+            }
+
+            @Override
+            protected boolean removeEldestEntry(Map.Entry<K, V> eldest) {
+                return size() > capacity;
+            }
+
+            public static void main(String[] args) {
+                LRUCache<Integer, String> cache = new LRUCache<>(3);
+
+                cache.put(1, "A");
+                cache.put(2, "B");
+                cache.put(3, "C");
+                System.out.println(cache); // {1=A, 2=B, 3=C}
+
+                cache.get(1); // 1 사용
+                cache.put(4, "D"); // 가장 오래된 2 제거
+                System.out.println(cache); // {3=C, 1=A, 4=D}
+            }
         }
     }
 }
