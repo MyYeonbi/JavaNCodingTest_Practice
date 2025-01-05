@@ -30,7 +30,7 @@ public class BasicQueExample {
         단 이때 큐에서 값을 제거하지 않는다.
         큐가 비어있다면 null을 반환한다.
 
-        peek()은 괄호 안에 값을 넣을 수 없다. 
+        peek()은 괄호 안에 값을 넣을 수 없다.
          */
         queue.add(40);
         queue.add(50);
@@ -38,5 +38,13 @@ public class BasicQueExample {
 
         System.out.println(queue.peek()); //30
         System.out.println(queue);//[30, 40, 50]
+
+        // 예제2 : 큐가 비었을때 연산
+        System.out.println("큐가 비었는가? " + queue.isEmpty()); //false
+        try {
+            queue.remove(); // 큐가 비어 있으면 예외 발생
+        } catch (Exception e) {
+            System.out.println("예외 발생 : 큐가 비어 있습니다. ");
+        }
     }
 }
