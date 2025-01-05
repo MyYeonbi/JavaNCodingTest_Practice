@@ -24,5 +24,19 @@ public class BasicQueExample {
 
         System.out.println(queue.remove(20)); //true
         System.out.println(queue); //[30]
+
+        /* peek() 메서드의 동작:
+        - 괄호 안에 아무것도 넣지 않으면 큐의 맨 앞 요소를 반환한다.
+        단 이때 큐에서 값을 제거하지 않는다.
+        큐가 비어있다면 null을 반환한다.
+
+        peek()은 괄호 안에 값을 넣을 수 없다. 
+         */
+        queue.add(40);
+        queue.add(50);
+        System.out.println(queue); //[30, 40, 50]
+
+        System.out.println(queue.peek()); //30
+        System.out.println(queue);//[30, 40, 50]
     }
 }
