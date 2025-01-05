@@ -63,5 +63,36 @@ public class BasicQueExample {
         System.out.println("큐에 'banana'가 있는가?" + queue1.contains("banana"));
         System.out.println("큐에 'grape'가 있는가?" + queue1.contains("grape"));
 
+        // 자주 나오는 예제 : BFS 너비 우선 탐색
+        int[][] graph = {
+                {1, 2}, // 0번 노드와 연결된 노드들
+                {0, 3, 4}, // 1번 노드
+                {0, 5, 6}, // 2번 노드
+                {1},       // 3번 노드
+                {1},       // 4번 노드
+                {2},       // 5번 노드
+                {2}        // 6번 노드
+        };
+
+        boolean[] visited = new boolean[7];
+        Queue<Integer> queue = new LinkedList<>();
+
+        int startNode = 0; // 시작 노드
+        queue.add(startNode);
+        visited[startNode] = true;
+
+        System.out.println("BFS 탐색 순서:");
+        while (!queue.isEmpty()) {
+            int current = queue.remove();
+            System.out.print(current + " ");
+
+            for (int neighbor : graph[current]) {
+                if (!visited[neighbor]) {
+                    queue.add(neighbor);
+                    visited[neighbor] = true;
+                }
+            }
+
+        }
     }
 }
