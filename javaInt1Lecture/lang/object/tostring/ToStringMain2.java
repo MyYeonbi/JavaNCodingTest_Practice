@@ -11,5 +11,10 @@ public class ToStringMain2 {
         System.out.println(car.toString());
         System.out.println(dog1.toString());
         System.out.println(dog2.toString());
+
+        System.out.println("2, println 내부에서 toString 호출");
+        System.out.println(car.toString());
+        System.out.println(dog1.toString());
+        System.out.println(dog2.toString());
     }
 }
