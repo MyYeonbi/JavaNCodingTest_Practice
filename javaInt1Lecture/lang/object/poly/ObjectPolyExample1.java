@@ -14,5 +14,10 @@ public class ObjectPolyExample1 {
     private static void action(Object obj) {
      // obj.sound(); // 컴파일 오류. Object는 sound()가 없음
      // obj.move();
+
+     // 객체에 맞는 다운 캐스팅 필요
+     if(obj instanceof Dog dog) {
+         dog.sound();
+     }
     }
 }
