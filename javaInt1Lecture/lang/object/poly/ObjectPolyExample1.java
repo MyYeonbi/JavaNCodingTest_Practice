@@ -18,6 +18,8 @@ public class ObjectPolyExample1 {
      // 객체에 맞는 다운 캐스팅 필요
      if(obj instanceof Dog dog) {
          dog.sound();
+     } else if (obj instanceof Car car) {
+         car.move();
      }
     }
 }
