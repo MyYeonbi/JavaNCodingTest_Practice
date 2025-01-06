@@ -12,6 +12,7 @@ public class Dog {
 
     @Override
     public String toString(){
+        return "dogName: " + dogName + ", age: " + age;
 
     }
 }
