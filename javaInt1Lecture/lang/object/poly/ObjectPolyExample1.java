@@ -9,6 +9,9 @@ public class ObjectPolyExample1 {
         Object o = dog;
 
         action(dog);
+        /*obj instanceof Dog dog가 true가 되는 이유는 obj가 실제로 Dog 객체를 참조하고 있기 때문입니다.
+이것은 Object obj = dog; 또는 Object obj = new Dog();와 같은 업캐스팅(자식 객체를 부모 타입으로 참조) 때문
+*/
         action(car);
     }
     private static void action(Object obj) {
