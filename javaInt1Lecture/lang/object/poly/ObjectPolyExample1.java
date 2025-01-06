@@ -17,6 +17,8 @@ public class ObjectPolyExample1 {
 
      // 객체에 맞는 다운 캐스팅 필요
      if(obj instanceof Dog dog) {
+         // Dog dog = (Dog) obj ;
+         // java 16이상 조건문 확인이 완료되면, Dog 타입으로 자동으로 다운 캐스팅된 변수 dog가 생성된다.
          dog.sound();
      } else if (obj instanceof Car car) {
          car.move();
