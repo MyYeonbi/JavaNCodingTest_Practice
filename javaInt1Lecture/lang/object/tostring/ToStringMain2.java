@@ -1,5 +1,7 @@
 package javaInt1Lecture.lang.object.tostring;
 
+import javaInt1Lecture.lang.object.ObjectPrinter;
+
 public class ToStringMain2 {
 
     public static void main(String[] args) {
@@ -16,5 +18,10 @@ public class ToStringMain2 {
         System.out.println(car.toString());
         System.out.println(dog1.toString());
         System.out.println(dog2.toString());
+
+        System.out.println("3. Object 다형성 활용");
+        ObjectPrinter.print(car);
+        ObjectPrinter.print(dog1);
+        ObjectPrinter.print(dog2);
     }
 }
