@@ -8,6 +8,9 @@ public class ToStringMain1 {
         //toString()반환값 출력
         System.out.println(string);
 
+        //object 직접 출력
+        System.out.println(object);
+
 
     }
 }
