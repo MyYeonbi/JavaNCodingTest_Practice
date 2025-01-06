@@ -7,10 +7,12 @@ public class ObjectPolyExample1 {
         Car car = new Car();
 
         Object o = dog;
+
         action(dog);
         action(car);
     }
     private static void action(Object obj) {
-
+     // obj.sound(); // 컴파일 오류. Object는 sound()가 없음
+     // obj.move();
     }
 }
