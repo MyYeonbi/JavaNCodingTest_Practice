@@ -13,5 +13,11 @@ public class RefMain1_2 {
         System.out.println("---- 부산 -> b ----");
         System.out.println("a = " + a);
         System.out.println("b = " + b);
+
+        /*
+        Address a = b;로 입력해도 오류가 발생하지 않는다. 
+        참조값의 공유를 막을 수 있는 방법이 없다.
+
+         */
     }
 }
