@@ -10,8 +10,7 @@ public class UserV2 {
 
     @Override
     public boolean equals(Object obj) {
-        UserV2 user = (UserV2) obj; //캐스팅
-        boolean result = id == user.id;
-        result;
+        UserV2 user = (UserV2) obj; //다운캐스팅
+        return id.equals(user.id);
     }
 }
