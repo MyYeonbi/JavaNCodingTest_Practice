@@ -7,6 +7,7 @@ public class EqualsMainV1 {
         UserV1 user2 = new UserV1("id-100");
 
         System.out.println("identity = " + (user1 == user2));
+        System.out.println("equality = " + (user1.equals(user2)));
 
     }
 }
