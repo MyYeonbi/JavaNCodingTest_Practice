@@ -14,7 +14,7 @@ public class EuclideanGcd {
     (큰 수 a와 작은 수 b의 최대공약수는 b와 a % b의 최대 공약수와 같다. )
     2. GCD(a, 0) = a
     (나머지가 0이 될 때의 a가 GCD이다.)
-    이 함수는 재귀적으로 호출되어 나머지가 0이 될때까지 계산을 반복한다.   
+    이 함수는 재귀적으로 호출되어 나머지가 0이 될때까지 계산을 반복한다.
 
     */
     public static void main(String[] args){
