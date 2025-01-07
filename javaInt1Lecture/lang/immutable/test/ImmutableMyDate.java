@@ -1,6 +1,7 @@
 package javaInt1Lecture.lang.immutable.test;
 
 public class ImmutableMyDate {
+    //사이드 이펙트를 방지하기 위해 필드에 final 설정.
     private final int year;
     private final int month;
     private final int day;
