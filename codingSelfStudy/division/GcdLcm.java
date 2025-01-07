@@ -1,7 +1,7 @@
 package codingSelfStudy.division;
 /* 피자 한판에 6조각이 있다. 특정인원 n 를 입력받아 이들에게 최소 1조각씩 나눠주기 위해
  최소한의 피자 판 수를 계산한다.
- n명은 모두 공통된 조각수를 배분 받아야 한다. 
+ n명은 모두 공통된 조각수를 배분 받아야 한다.
 * */
 public class GcdLcm {
 
