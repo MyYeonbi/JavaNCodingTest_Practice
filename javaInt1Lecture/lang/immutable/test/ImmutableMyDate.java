@@ -16,12 +16,12 @@ public class ImmutableMyDate {
         return new ImmutableMyDate(newyear, month, day);
     }
 
-    public ImmutableMyDate withMonth(int month) {
-        return new ImmutableMyDate(year, month, day);
+    public ImmutableMyDate withMonth(int newmonth) {
+        return new ImmutableMyDate(year, newmonth, day);
     }
 
-    public ImmutableMyDate withDay(int day) {
-        return new ImmutableMyDate(year, month, day);
+    public ImmutableMyDate withDay(int newday) {
+        return new ImmutableMyDate(year, month, newday);
     }
 
     @Override
