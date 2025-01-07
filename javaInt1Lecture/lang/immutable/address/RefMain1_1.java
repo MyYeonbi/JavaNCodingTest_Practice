@@ -8,5 +8,10 @@ public class RefMain1_1 {
         Address b = a;
         System.out.println("a = " + a);
         System.out.println("b = " + b);
+
+        b.setValue("부산"); //b의 값을 부산으로 변경해야함.
+        System.out.println("---- 부산 -> b ----");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
     }
 }
