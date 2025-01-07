@@ -1,4 +1,4 @@
-package javaInt1Lecture.lang.immutable;
+package javaInt1Lecture.lang.immutable.address;
 
 public class ImmutableAddress {
 
@@ -12,7 +12,7 @@ public class ImmutableAddress {
         return value;
     }
 
-    
+
 
     @Override
     public String toString() {
