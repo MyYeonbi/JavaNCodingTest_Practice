@@ -26,5 +26,5 @@ public class UserV2 {
         return Objects.equals(id, userV2.id);
     }
 
-    
+
 }
