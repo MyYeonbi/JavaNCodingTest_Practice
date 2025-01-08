@@ -19,6 +19,10 @@ public class StringUtillsMain {
         String numString2 = "" + num;
         System.out.println("빈문자열 + num: " + numString);
 
+        //toCharArray
+        char[] strCharArray = str.toCharArray();
+        System.out.println("문자열을 문자 배열로 변환: " + strCharArray);
+
 
     }
 }
