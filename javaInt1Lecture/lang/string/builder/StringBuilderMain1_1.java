@@ -17,6 +17,10 @@ public static void main(String[] args) {
 
     sb.reverse();
     System.out.println("reverse = " + sb );
+
+    //StringBuilder -> String
+    String string = sb.toString();
+    System.out.println("string = " + string );
 }
 }
 
