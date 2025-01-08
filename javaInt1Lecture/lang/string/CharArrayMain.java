@@ -8,5 +8,8 @@ public class CharArrayMain {
 
         char[] charArr =  new char[] { 'a', 'b', 'c' };
         System.out.println(charArr);
+
+        String str = "hello";
+        System.out.println("str = " + str);
     }
 }
