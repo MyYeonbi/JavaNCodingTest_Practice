@@ -11,6 +11,12 @@ public static void main(String[] args) {
 
     sb.insert(4, "Java");
     System.out.println("insert = "+ sb );
+
+    sb.delete(4, 8);
+    System.out.println("delete = " + sb );
+
+    sb.reverse();
+    System.out.println("reverse = " + sb );
 }
 }
 
