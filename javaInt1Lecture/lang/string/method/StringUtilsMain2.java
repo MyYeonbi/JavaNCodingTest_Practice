@@ -14,7 +14,7 @@ public class StringUtilsMain2 {
         System.out.println(format2);
 
         //printf
-        System.out.println("숫자: %.2f\n", 10.1234);
+        System.out.printf("숫자: %.2f\n", 10.1234);
 
         //matches메서드
         String regex = "Hello, (Java! World)";
