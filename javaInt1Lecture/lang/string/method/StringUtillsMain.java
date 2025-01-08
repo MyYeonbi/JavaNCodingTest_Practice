@@ -22,6 +22,9 @@ public class StringUtillsMain {
         //toCharArray
         char[] strCharArray = str.toCharArray();
         System.out.println("문자열을 문자 배열로 변환: " + strCharArray);
+        for (char c : strCharArray) {
+            System.out.print(c);
+        }
 
 
     }
