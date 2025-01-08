@@ -8,6 +8,9 @@ public static void main(String[] args) {
     sb.append("C");
     sb.append("D");
     System.out.println("sb = " + sb);
+
+    sb.insert(4, "Java");
+    System.out.println("insert = "+ sb );
 }
 }
 
