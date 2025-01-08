@@ -14,7 +14,11 @@ public class StringUtillsMain {
         System.out.println("불리언의 문자열 값: " + boolString);
         String objString = String.valueOf(obj);
         System.out.println("객체의 문자열 값: " +  objString);
-        
+
+        //문자 + x -> 문자
+        String numString2 = "" + num;
+        System.out.println("빈문자열 + num: " + numString);
+
 
     }
 }
