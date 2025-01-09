@@ -8,7 +8,10 @@ public class WrapperClassMain {
         //        * 미래에 삭제 예정, 대신에 valueOf()를 사용 */
         System.out.println("newInteger = " + newInteger);
 
-        Integer integerObj = Integer.valueOf(10);//-128 ~ 127 자주 사용하는 숫자 값 재사용. 불변
+        Integer integerObj = Integer.valueOf(10);//
+
+        Long longObj = Long.valueOf(100); //기본형 long 값을 래퍼 클래스 Long의 객체로 변환하는 코드
+
 
 
     }
