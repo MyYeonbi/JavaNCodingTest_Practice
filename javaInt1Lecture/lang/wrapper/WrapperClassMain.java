@@ -11,8 +11,11 @@ public class WrapperClassMain {
         Integer integerObj = Integer.valueOf(10);//
 
         Long longObj = Long.valueOf(100); //기본형 long 값을 래퍼 클래스 Long의 객체로 변환하는 코드
-        // Long.valueOf(long l)는 기본형 long 값을 Long 객체로 변환하는 정적(static) 메서드이다.
-
+        //
+        Double doubleObj = Double.valueOf(10.5);
+        System.out.println("integerObj = " + integerObj);
+        System.out.println("longObj = " + longObj);
+        System.out.println("doubleObj = " + doubleObj);
 
 
     }
