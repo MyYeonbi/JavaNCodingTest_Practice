@@ -17,6 +17,12 @@ public class WrapperClassMain {
         System.out.println("longObj = " + longObj);
         System.out.println("doubleObj = " + doubleObj);
 
+        System.out.println("내부 값 읽기");
+        int intValue = integerObj.intValue();
+        System.out.println("intValue = " + intValue);
+        long longValue = longObj.longValue();
+        System.out.println("longValue = " + longValue);
+
 
     }
 }
