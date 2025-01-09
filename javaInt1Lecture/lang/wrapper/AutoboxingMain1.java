@@ -8,7 +8,7 @@ public class AutoboxingMain1 {
         Integer boxingValue = value; //오토 박싱(Auto-boxing)
 
         // Wrapper -> Primitive
-        int unboxedValue = boxingValue.intValue();
+        int unboxedValue = boxingValue; //오토 언박싱(Auto-Unboxing)
 
         System.out.println("boxingValue = " + boxingValue);
         System.out.println("Value of unboxed value is " + unboxedValue);
