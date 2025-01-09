@@ -24,5 +24,5 @@ public class WrapperVsPrimitive {
         endTime = System.currentTimeMillis();
         System.out.println("Sum primitive in iterations: " + sumPrimitive);
         System.out.println("래퍼 클래스 Long 실행 시간: "+(endTime - startTime) + "ms");
-    }// 기본형 연산이 래퍼 클래스보다 대략 5배 정도 빠르다. 
+    }// 기본형 연산이 래퍼 클래스보다 대략 5배 정도 빠르다.
 }
