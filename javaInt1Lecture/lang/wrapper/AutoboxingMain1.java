@@ -7,6 +7,10 @@ public class AutoboxingMain1 {
         int value = 7;
         Integer boxingValue = Integer.valueOf(value);
 
-        // Wrapper ->
+        // Wrapper -> Primitive
+        int unboxedValue = boxingValue.intValue();
+
+        System.out.println("boxingValue = " + boxingValue);
+        System.out.println("Value of unboxed value is " + unboxedValue);
     }
 }
