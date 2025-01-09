@@ -23,6 +23,10 @@ public class WrapperClassMain {
         long longValue = longObj.longValue();
         System.out.println("longValue = " + longValue);
 
+        System.out.println("---- 비교 ----");
+        System.out.println("==: " + (newInteger == integerObj));
+        System.out.println("equals: "(newInteger.equals(integerObj)));
+
 
     }
 }
