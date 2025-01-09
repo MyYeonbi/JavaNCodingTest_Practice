@@ -6,7 +6,7 @@ public class MyIntegerNullMain0 {
         System.out.println(findValue(intArr, -1)); // -1;
         System.out.println(findValue(intArr, 0));
         System.out.println(findValue(intArr, 1));
-        System.out.println(findValue(intArr, 100)); 
+        System.out.println(findValue(intArr, 100));
 
     }
     private static int findValue(int[] intArr, int target) {
