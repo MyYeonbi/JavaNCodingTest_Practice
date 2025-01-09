@@ -14,6 +14,11 @@ public class MyIntegerMethodMain0 {
         System.out.println("i3 =" + i3);
     }
 
+    /* value값을 외부 메서드를 이용하여 비교. 항상 자기 자신의 값인 value가 사용됨.
+    만약 value가 객체라면 value 객체 스스로 자기 자신의 값과 다른 값을 비교하는 메서드를 만드는것이 더 유용할 것.
+    
+     */
+
     public static int compareTo(int value, int target) {
         if (value < target) {
             return -1;
