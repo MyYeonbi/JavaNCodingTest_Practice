@@ -5,7 +5,7 @@ public class AutoboxingMain1 {
     public static void main(String[] args) {
         //Primitive -> Wrapper
         int value = 7;
-        Integer boxingValue = Integer.valueOf(value);
+        Integer boxingValue = value; //오토 박싱(Auto-boxing)
 
         // Wrapper -> Primitive
         int unboxedValue = boxingValue.intValue();
