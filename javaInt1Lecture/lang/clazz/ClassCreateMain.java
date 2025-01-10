@@ -10,5 +10,8 @@ public class ClassCreateMain {
         System.out.println("Hello: " + hello);
         System.out.println("Result: " + result);
 
+        /* .getDeclaredConstructor().newInstance(); : 생성자를 선택한다.
+        * */
+
     }
 }
