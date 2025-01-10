@@ -16,6 +16,10 @@ public class RandomMain {
         boolean randomBoolean = random.nextBoolean();
         System.out.println("randomBoolean: " + randomBoolean);
 
+        // 범위 조회
+        int randomRange1 = random.nextInt(10);// 0 ~ 9까지 출력
+        System.out.println("0 ~ 9: " + randomRange1);
+
 
     }
 }
