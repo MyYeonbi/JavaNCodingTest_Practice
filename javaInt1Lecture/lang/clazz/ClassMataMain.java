@@ -21,6 +21,8 @@ public class ClassMataMain {
             System.out.println("method =" + method);
         }
 
+        // 상위 클래스 정보 출력
+            System.out.println("Superclass: " + clazz.getSuperclass().getName());
         }
     }
 }
