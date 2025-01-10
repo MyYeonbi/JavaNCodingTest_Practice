@@ -23,6 +23,12 @@ public class ClassMataMain {
 
         // 상위 클래스 정보 출력
             System.out.println("Superclass: " + clazz.getSuperclass().getName());
+
+        // 인터페이스 정보 출력
+            Class[] interfaces = clazz.getInterfaces();
+            for (Class i : interfaces) {
+                System.out.println("interface = " + i.getName());
+            }
         }
     }
 }
