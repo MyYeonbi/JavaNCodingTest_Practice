@@ -13,7 +13,8 @@ public class MathMain {
         System.out.println("round(2.1):" + Math.round(2.5)); // 반올림
 
         // 기타 유용한 메서드
-        System.out.println("sqrt(2)" + Math.sqrt(2)); // 제곱근
+        System.out.println("sqrt(2)" + Math.sqrt(4)); // 제곱근
+        System.out.println("random()" + Math.random()); // 0.0 ~ 1.0 사이의 double 값
 
 
     }
