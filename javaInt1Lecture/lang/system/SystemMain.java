@@ -5,5 +5,8 @@ public class SystemMain {
         // 현재 시간(밀리초)를 가져온다.
         long currentTimeMillis = System.currentTimeMillis();
         System.out.println("Current time: " + currentTimeMillis);
+
+        // 현재 시간(나노초)를 가져온다.
+        long currentNanoTime = System.nanoTime();
     }
 }
