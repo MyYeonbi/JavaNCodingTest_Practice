@@ -1,5 +1,6 @@
 package javaInt1Lecture.lang.system;
 
+import java.util.Arrays;
 import java.util.Map;
 
 public class SystemMain {
@@ -26,6 +27,7 @@ public class SystemMain {
 
         // 배열 출력
         System.out.println("copiedArray = " + copiedArray);
+        System.out.println("copiedArray = " + Arrays.toString(copiedArray));
 
     }
 }
