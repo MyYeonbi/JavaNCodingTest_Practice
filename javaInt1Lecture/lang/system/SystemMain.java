@@ -29,5 +29,8 @@ public class SystemMain {
         System.out.println("copiedArray = " + copiedArray);
         System.out.println("copiedArray = " + Arrays.toString(copiedArray));
 
+        // 프로그램 종료
+        System.exit(0);
+
     }
 }
