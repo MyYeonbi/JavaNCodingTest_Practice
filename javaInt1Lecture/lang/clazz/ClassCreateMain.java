@@ -11,6 +11,7 @@ public class ClassCreateMain {
         System.out.println("Result: " + result);
 
         /* .getDeclaredConstructor().newInstance(); : 생성자를 선택한다.
+            newInstance(): 선택된 생성자를 기반으로 인스턴스를 생성한다.
         * */
 
     }
