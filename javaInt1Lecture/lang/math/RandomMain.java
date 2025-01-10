@@ -20,6 +20,9 @@ public class RandomMain {
         int randomRange1 = random.nextInt(10);// 0 ~ 9까지 출력
         System.out.println("0 ~ 9: " + randomRange1);
 
+        int randomRange2 = random.nextInt(10) + 1;// 1~ 10까지 출력
+        System.out.println("0 ~ 10: " + randomRange2);
+
 
     }
 }
