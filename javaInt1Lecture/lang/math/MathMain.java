@@ -9,6 +9,7 @@ public class MathMain {
 
         // 반올림 및 정밀도 메서드
         System.out.println("ceil(2.1):" + Math.ceil(2.1)); // 올림
+        System.out.println("floor(2.1):" + Math.floor(2.1)); //내림
 
     }
 }
