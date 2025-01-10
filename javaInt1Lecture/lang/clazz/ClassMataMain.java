@@ -1,6 +1,7 @@
 package javaInt1Lecture.lang.clazz;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 public class ClassMataMain {
     public static void main(String[] args) throws Exception {
@@ -13,6 +14,12 @@ public class ClassMataMain {
         Field[] fields = clazz.getDeclaredFields();
         for (Field field : fields) {
             System.out.println("Field: " + field.getType() + " " + field.getName());
+
+        //모든 메서드 출력
+        Method[] methods = clazz.getDeclaredMethods();
+        for (Method method : methods) {
+            System.out.println("method =" + method);
+        }
 
         }
     }
