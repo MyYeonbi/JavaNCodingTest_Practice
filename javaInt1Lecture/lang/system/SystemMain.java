@@ -17,5 +17,6 @@ public class SystemMain {
 
         // 시스템 속성을 읽는다.
         System.out.println("proprerties = " + System.getProperties());
+        System.out.println("Java version = " + System.getProperty("java.version"));
     }
 }
