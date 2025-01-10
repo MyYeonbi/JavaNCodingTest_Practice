@@ -14,5 +14,8 @@ public class SystemMain {
 
         // 환경 변수를 읽는다.
         System.out.println("getenv = " + System.getenv());
+
+        // 시스템 속성을 읽는다.
+        System.out.println("proprerties = " + System.getProperties());
     }
 }
