@@ -2,7 +2,7 @@ package codingStudy.set;
 
 import java.util.Arrays;
 import java.util.Set;
-import java.util.HashSet
+import java.util.HashSet;
 
 public class SetFundamental {
     public static void main(String[] args) {
