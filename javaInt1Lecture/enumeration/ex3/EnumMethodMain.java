@@ -14,6 +14,7 @@ public class EnumMethodMain {
         // 2. String -> ENUM 변환,잘못된 문자면 IllegalArgumentException
         String input = "GOLD";
         Grade gold = Grade.valueOf(input);
-        System.out.println("gold = " + gold);
+        System.out.println("gold = " + gold); //toString 오버라이딩 가능.
+
     }
 }
