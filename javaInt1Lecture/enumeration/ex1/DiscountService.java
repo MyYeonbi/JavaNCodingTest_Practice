@@ -5,6 +5,7 @@ public class DiscountService {
     public int discount (String grade, int price){
         int discountPercent = 0;
 
+        // 등급별로 할인액을 적용하는 if문에 새로 만든 클래스의 필드로 바꿔준다.
         if (grade.equals(StringGrade.BASIC)) {
             discountPercent = 10;
         } else if (grade.equals(StringGrade.GOLD)){
