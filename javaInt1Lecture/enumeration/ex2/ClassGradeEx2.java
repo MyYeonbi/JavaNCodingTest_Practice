@@ -8,8 +8,7 @@ public class ClassGradeEx2 {
 	•	결과: DiscountService의 discount 메서드에서 할인X가 출력되고, 할인 금액이 계산되지 않습니다.
 */
         DiscountService discountService = new DiscountService();
-        //ClassGrade classGrade = new ClassGrade();
-        int result = discountService.discount(classGrade, price);
-        System.out.println("newClassGrade 등급의 할인 금액: " + result);
+
+
     }
 }
