@@ -2,6 +2,8 @@ package javaInt1Lecture.enumeration.ex1;
 
 public class DiscountService {
 
+
+    // 오타나 설정하지 않은 등급을 입력하는 경우를 막는 경우는 인수에 String으로 된 것을 다른 타입으로 바꾸는 것이다.
     public int discount (String grade, int price){
         int discountPercent = 0;
 
