@@ -15,7 +15,7 @@ public class DiscountService {
             System.out.println(grade + ": 할인X");
         }
         // 10000 * (20 / 100) -> 2000원
-        // 가격 * 할인율 / 100을 계산하면 할인 금액을 구할 수 있다. 
+        // 가격 * 할인율 / 100을 계산하면 할인 금액을 구할 수 있다.
         return price * discountPercent / 100;
     }
 }
