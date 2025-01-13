@@ -4,11 +4,16 @@ import java.util.Arrays;
 
 public class EnumMethodMain {
     public static void main(String[] args) {
-        // 모든 ENUM 변환
+        // 1. 모든 ENUM 변환
         Grade[] values = Grade.values();
         System.out.println("values = " + Arrays.toString(values));
         for (Grade value : values) {
             System.out.println("name = " + value.name()+ ", ordinal = " + value.ordinal());
         }
+
+        // 2. String -> ENUM 변환,잘못된 문자면 IllegalArgumentException
+        String input = "GOLD";
+        Grade gold = Grade.valueOf(input);
+        System.out.println("gold = " + gold);
     }
 }
