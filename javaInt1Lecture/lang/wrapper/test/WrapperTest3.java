@@ -21,7 +21,10 @@ public class WrapperTest3 {
         */
 
         //Integer -> int
-        int inValue = integer1.intValue();
-        System.out.println("inValue = " + inValue);
+        int intValue = integer1.intValue();
+        System.out.println("inValue = " + intValue);
+        //int -> Integer
+        Integer integer2 = Integer.valueOf(intValue);
+        System.out.println("integer2 = " + integer2);
     }
 }
