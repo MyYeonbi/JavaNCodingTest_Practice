@@ -1,4 +1,4 @@
-package javaInt1Lecture.enumeration.ref2;
+package javaInt1Lecture.enumeration.ref3;
 
 public enum Grade {
     BASIC(10),GOLD(20),DIAMOND(30);
@@ -13,5 +13,8 @@ public enum Grade {
         return discountPercent;
     }
 
-
+    //추가
+    public int discount(int price) {
+        return price * discountPercent / 100;
+    }
 }
