@@ -12,4 +12,13 @@ public enum HttpStatus {
         this.code = code;
         this.message = message;
     }
+
+    public boolean isSuccess() {
+        return code >= 200 && code <= 299;
+    }
+    public int getCode() {
+        return code;
+    }
+
+
 }
