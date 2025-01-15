@@ -13,6 +13,9 @@ public enum HttpStatus {
         this.message = message;
     }
 
+    public static HttpStatus findByCode(int httpCodeInput) {
+    }
+
     public boolean isSuccess() {
         return code >= 200 && code <= 299;
     }

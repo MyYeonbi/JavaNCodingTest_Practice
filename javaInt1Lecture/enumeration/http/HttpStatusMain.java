@@ -6,6 +6,9 @@ public class HttpStatusMain {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("HTTP CODE: ");
-        
+        int httpCodeInput = scanner.nextInt();
+
+       HttpStatus status = HttpStatus.findByCode(httpCodeInput);
+
     }
 }
