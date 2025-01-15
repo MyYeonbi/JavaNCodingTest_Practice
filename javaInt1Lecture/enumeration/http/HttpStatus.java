@@ -13,7 +13,8 @@ public enum HttpStatus {
         this.message = message;
     }
 
-    public static HttpStatus findByCode(int httpCodeInput) {
+    public static HttpStatus findByCode(int code) {
+        HttpStatus[] values = values();
     }
 
     public boolean isSuccess() {
