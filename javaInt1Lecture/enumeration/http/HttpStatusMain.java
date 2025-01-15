@@ -9,6 +9,9 @@ public class HttpStatusMain {
         int httpCodeInput = scanner.nextInt();
 
        HttpStatus status = HttpStatus.findByCode(httpCodeInput);
+       if (status == null) {
+           System.out.println("정의되지 않은 코드");
+       }
 
     }
 }
