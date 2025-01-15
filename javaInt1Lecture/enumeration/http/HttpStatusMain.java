@@ -11,6 +11,8 @@ public class HttpStatusMain {
        HttpStatus status = HttpStatus.findByCode(httpCodeInput);
        if (status == null) {
            System.out.println("정의되지 않은 코드");
+       } else {
+           System.out.println(status.getCode()+ " "+ status.getMessage());
        }
 
     }
