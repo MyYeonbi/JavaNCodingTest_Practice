@@ -8,12 +8,8 @@ public class EnumRefMain3_2 {
     public static void main(String[] args) {
         int price = 10000;
 
-        int discount = Grade.BASIC.discount(price);
-        int gold = Grade.GOLD.discount(price);
-        int diamond = Grade.DIAMOND.discount(price);
-
-        System.out.println("Basic: " + basic);
-        System.out.println("Gold: " + gold);
-        System.out.println("Diamond: " + diamond);
+        System.out.println("Basic: " + Grade.BASIC.discount(price));
+        System.out.println("Gold: " + Grade.GOLD.discount(price));
+        System.out.println("Diamond: " + Grade.DIAMOND.discount(price));
     }
 }
