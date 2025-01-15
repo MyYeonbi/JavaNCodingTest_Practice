@@ -15,6 +15,12 @@ public enum HttpStatus {
 
     public static HttpStatus findByCode(int code) {
         HttpStatus[] values = values();
+        for (HttpStatus status : values) {
+            if (status.getCode() == code) {
+                return status;
+            }
+        }
+        return null;
     }
 
     public boolean isSuccess() {
