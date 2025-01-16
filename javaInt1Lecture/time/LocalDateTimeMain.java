@@ -29,6 +29,9 @@ public class LocalDateTimeMain {
 
         //비교
         System.out.println("현재 날짜시간이 지정 날짜시간보다 이전인가? " + nowDt.isBefore(ofDt));
+        System.out.println("현재 날짜시간이 지정 날짜시간보다 이후인가? "+ nowDt.isAfter(ofDt));
+
+
 
 
     }
