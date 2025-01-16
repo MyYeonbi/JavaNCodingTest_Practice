@@ -8,6 +8,8 @@ public class ZoneIdMain {
     public static void main(String[] args) {
         for (String avaiableZoneId : ZoneId.getAvailableZoneIds()) {
             System.out.println("Available Zone: " + avaiableZoneId);
+            ZoneId zoneId = ZoneId.of(avaiableZoneId);
+            System.out.println(zoneId + " | "+ zoneId.getRules());
         }
     }
 }
