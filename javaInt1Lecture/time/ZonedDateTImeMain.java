@@ -14,5 +14,10 @@ public class ZonedDateTImeMain {
         ZonedDateTime zdt1 = ZonedDateTime.of(ldt, ZoneId.of("Asia/Seoul"));
         System.out.println("zdt1" + zdt1);
 
+        ZonedDateTime zdt2 = ZonedDateTime.of(2030, 1, 1, 13, 30, 50, 0, ZoneId.of("Asia/Seoul"));
+        System.out.println("zdt2 : " + zdt2);
+
+
+
     }
 }
