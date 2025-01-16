@@ -7,7 +7,7 @@ public class LocalDateTimeMain {
 
     public static void main(String[] args) {
    LocalDateTime nowDt = LocalDateTime.now();
-        LocalDateTime ofDt = LocalDateTime.of(2016, 8, 16, 8, 10, 1);
+        LocalDateTime ofDt = LocalDateTime.of(2025, 1, 16, 8, 10, 1);
         System.out.println("현재 날짜시간 : " + nowDt);
         System.out.println("지정 날짜시간 : " + ofDt);
 
@@ -24,6 +24,8 @@ public class LocalDateTimeMain {
          //계산(불변)
         LocalDateTime ofDtPlus = ofDt.plusDays(1000);
         System.out.println("지정 날짜시간 +1000 : " + ofDtPlus);
+        LocalDateTime ofDtPlus1Year = ofDt.plusYears(1);
+        System.out.println("지정 날짜시간 +1년 = " + ofDtPlus1Year);
 
 
     }
