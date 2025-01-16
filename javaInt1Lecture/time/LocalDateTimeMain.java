@@ -21,6 +21,10 @@ public class LocalDateTimeMain {
         LocalDateTime localDateTime = LocalDateTime.of(localDate, localTime);
         System.out.println("localDateTime : " + localDateTime);
 
+         //계산(불변)
+        LocalDateTime ofDtPlus = ofDt.plusDays(1000);
+        System.out.println("지정 날짜시간 +1000 : " + ofDtPlus);
+
 
     }
 }
