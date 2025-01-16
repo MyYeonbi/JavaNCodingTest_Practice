@@ -17,6 +17,10 @@ public class LocalDateTimeMain {
         System.out.println("--  localDate : " + localDate);
         System.out.println("localTime : " + localTime);
 
+        //날짜와 시간 합체
+        LocalDateTime localDateTime = LocalDateTime.of(localDate, localTime);
+        System.out.println("localDateTime : " + localDateTime);
+
 
     }
 }
