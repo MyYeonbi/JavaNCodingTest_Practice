@@ -14,5 +14,8 @@ public class ZoneIdMain {
 
         ZoneId zoneId = ZoneId.systemDefault();
         System.out.println("ZoneId.systemDefault(): " + zoneId);
+
+        ZoneId shanghaiZoneId = ZoneId.of("Asia/Shanghai");
+        System.out.println("shanghaiZoneId: " + shanghaiZoneId);
     }
 }
