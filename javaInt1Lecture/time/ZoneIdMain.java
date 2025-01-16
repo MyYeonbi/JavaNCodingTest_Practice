@@ -11,5 +11,8 @@ public class ZoneIdMain {
             ZoneId zoneId = ZoneId.of(avaiableZoneId);
             System.out.println(zoneId + " | "+ zoneId.getRules());
         }
+
+        ZoneId zoneId = ZoneId.systemDefault();
+        System.out.println("ZoneId.systemDefault(): " + zoneId);
     }
 }
