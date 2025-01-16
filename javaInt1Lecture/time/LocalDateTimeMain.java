@@ -27,6 +27,9 @@ public class LocalDateTimeMain {
         LocalDateTime ofDtPlus1Year = ofDt.plusYears(1);
         System.out.println("지정 날짜시간 +1년 = " + ofDtPlus1Year);
 
+        //비교
+        System.out.println("현재 날짜시간이 지정 날짜시간보다 이전인가? " + nowDt.isBefore(ofDt));
+
 
     }
 }
