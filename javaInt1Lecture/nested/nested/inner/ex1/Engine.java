@@ -1,6 +1,6 @@
 package javaInt1Lecture.nested.nested.inner.ex1;
 
-import javaBasicLecture.extends1.ex2.Car;
+
 
 //Car에서만 사용
 public class Engine {
