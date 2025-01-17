@@ -1,0 +1,20 @@
+package javaInt1Lecture.nested.nested.local;
+
+public class LocalOuterV1 {
+
+    private int outInstanceVar = 3;
+
+    public void process(int paramVar) {
+        int localVar = 1;
+
+        class LocalPrinter {
+            int value = 0;
+
+            public void printData() {
+                System.out.println("value: " + value);
+                System.out.println("localVar: " + localVar);
+            }
+        }
+
+    }
+}
