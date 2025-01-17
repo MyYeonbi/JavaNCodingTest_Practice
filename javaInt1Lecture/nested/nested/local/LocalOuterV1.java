@@ -13,6 +13,7 @@ public class LocalOuterV1 {
             public void printData() {
                 System.out.println("value: " + value);
                 System.out.println("localVar: " + localVar);
+                System.out.println("paramVar: " + paramVar);
             }
         }
 
