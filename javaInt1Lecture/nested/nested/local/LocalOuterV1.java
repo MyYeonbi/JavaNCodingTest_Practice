@@ -14,6 +14,7 @@ public class LocalOuterV1 {
                 System.out.println("value: " + value);
                 System.out.println("localVar: " + localVar);
                 System.out.println("paramVar: " + paramVar);
+                System.out.println("outInstanceVar: " + outInstanceVar);
             }
         }
 
