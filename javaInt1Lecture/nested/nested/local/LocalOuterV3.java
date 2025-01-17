@@ -22,11 +22,15 @@ public class LocalOuterV3 {
         }
 
         LocalPrinter printer = new LocalPrinter();
-        printer.print();
+        // printer.print();를 여기서 실행하지 않고 Printer 인스턴스만 반환한다.
+        return printer;
 
     }
     public static void main(String[] args) {
         LocalOuterV3 localOuter = new LocalOuterV3();
-        localOuter.process(1);
+        Printer printer = localOuter.process(2);
+
+        //printer.print()를 나중에 실행한다. process()의 스택 프레임이 사라진 이후에 실행
+        printer.print();
     }
 }
