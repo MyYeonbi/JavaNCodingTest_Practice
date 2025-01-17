@@ -10,18 +10,10 @@ public class Car {
     public Car(String model, int chargeLevel) {
         this.model = model;
         this.chargeLevel = chargeLevel;
-        this.engine = new Engine(this);
+        this.engine = new Engine();
     }
 
-    //Engine에서만 사용하는 메서드
-       public String getModel() {
-        return model;
-    }
 
-    //Engine에서만 사용하는 메서드
-    public int getChargeLevel() {
-        return chargeLevel;
-    }
 
    public void start(){
         engine.start();
@@ -29,15 +21,10 @@ public class Car {
    }
     public class Engine {
 
-        private Car car;
-
-        public Engine(Car car) {
-            this.car = car;
-        }
 
         public void start() {
-            System.out.println("충전 레벨 확인: car.getChargeLevel()" + car.getChargeLevel());
-            System.out.println(car.getModel() + "의 엔진을 구동합니다.");
+            System.out.println("충전 레벨 확인: " + chargeLevel);
+            System.out.println(model + "의 엔진을 구동합니다.");
         }
     }
 }
