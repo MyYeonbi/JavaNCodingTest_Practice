@@ -13,6 +13,7 @@ public class LocalOuterV3 {
             @Override
             public void print() {
                 System.out.println("value: " + value);
+                //인스턴스는 지역변수보다 더 오래 살아남는다.
                 System.out.println("localVar: " + localVar);
                 System.out.println("paramVar: " + paramVar);
                 System.out.println("outInstanceVar: " + outInstanceVar);
