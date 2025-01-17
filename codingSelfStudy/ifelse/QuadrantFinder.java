@@ -8,8 +8,12 @@ public class QuadrantFinder {
             return 2;
         } else if (dot[0] <0 && dot[1] <0) {
             return 3;
-        } else if (dot[0]>0 && dot[1] <0){
+        } else (dot[0]>0 && dot[1] <0){
             return 4;
         }
+    }
+    public static void main(String[] args) {
+        QuadrantFinder quadrantFinder = new QuadrantFinder();
+        System.out.println(quadrantFinder.solution(new int[]{1,2}));
     }
 }
