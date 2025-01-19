@@ -11,7 +11,7 @@ public class DigitSumCalculator {
 
         while (n > 0) { //n이 0보다 클 때만 반복
             sum += n %10; // 마지막 자리 숫자를 sum에 더함
-            n /= 10; // 마지막 자리 숫자를 제거
+            n /= 10; // 마지막 자리 숫자를 제s
         }
 
         return sum;
