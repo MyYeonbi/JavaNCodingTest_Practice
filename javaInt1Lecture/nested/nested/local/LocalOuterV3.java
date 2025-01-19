@@ -1,6 +1,9 @@
 package javaInt1Lecture.nested.nested.local;
 
-public class LocalOuterV3 {
+public class LocalOuterV3  {
+    int value = 0;
+
+   
 
     private int outInstanceVar = 3;
 
