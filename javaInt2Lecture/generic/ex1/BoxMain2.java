@@ -15,10 +15,10 @@ public class BoxMain2 {
         System.out.println("string = " + string);
 
         // 잘못된 타입의 인수 전달시
-        integerBox.set("문자가 왜 integer박스에 들어가죠?");
+        /*integerBox.set("문자가 왜 integer박스에 들어가죠?");
         Integer result = (integer) integerBox.get(); //String -> Integer 캐스팅 예외
         System.out.println("result = " + result);
-
+*/
 
 
     }
