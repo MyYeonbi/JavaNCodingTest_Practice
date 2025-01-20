@@ -1,4 +1,4 @@
-package codingSelfStudy.String;
+package codingSelfStudy.String.stringBuillder;
 
 public class CipherDecoder {
     public String solution(String cipher, int code) {
