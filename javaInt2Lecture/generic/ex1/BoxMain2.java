@@ -5,6 +5,9 @@ public class BoxMain2 {
         ObjectBox objectBox = new ObjectBox();
         objectBox.set(10);
         Object object = objectBox.get();
+        Integer integer = (Integer) object;
+        System.out.println("integer = " + integer);
+
 
     }
 }
