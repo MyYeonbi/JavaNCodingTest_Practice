@@ -7,5 +7,11 @@ public class BoxMain1 {
         integerBox.set(10); // 오토박싱
         Integer integer = integerBox.get();
         System.out.println("integer = " + integer);
+
+        StringBox stringBox = new StringBox();
+        StringBox.set("hello");
+        String str = stringBox.get();
+        System.out.println("str = " + str);
+
     }
 }
