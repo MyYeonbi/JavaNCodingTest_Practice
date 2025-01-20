@@ -10,7 +10,7 @@ public class BoxMain1 {
 
         StringBox stringBox = new StringBox();
         //인스턴스 메서드(set)를 클래스 이름을 통해 호출하여 생긴 오류_ 해결 과정은 이슈란 ✨
-        StringBox.set("hello");
+        stringBox.set("hello");
         String str = stringBox.get();
         System.out.println("str = " + str);
 
