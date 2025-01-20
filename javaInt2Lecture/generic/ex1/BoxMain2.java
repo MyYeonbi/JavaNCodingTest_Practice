@@ -6,6 +6,7 @@ public class BoxMain2 {
         objectBox.set(10);
         Object object = objectBox.get();
         Integer integer = (Integer) object;
+        Integer integer2 = (Integer) objectBox.get();
         System.out.println("integer = " + integer);
 
 
