@@ -18,6 +18,7 @@ public class BoxMain3 {
         //원하는 모든 타입 사용 가능
         GenericBox<Double> doubleBox = new GenericBox<>();
         doubleBox.set(3.14);
+        //중복된 변수 이름으로 컴파일 오류
         Double doubleBox = doubleBox.get();
         System.out.println("doubleBox = " + doubleBox);
 
