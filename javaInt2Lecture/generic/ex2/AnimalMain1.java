@@ -15,5 +15,10 @@ public class AnimalMain1 {
         Dog findDog = dogBox.get();
         System.out.println("findDog: " + findDog);
 
+        Box<Cat> catBox = new Box<>();
+        catBox.set(cat);
+        Cat findCat = catBox.get();
+        System.out.println("findCat: " + findCat);
+
     }
 }
