@@ -8,5 +8,11 @@ public class BoxMain3 {
         integerBox.set(10);
         //integerBox.set("문자"); // Integer 타입만 허용, 컴파일 오류
         Integer integer = integerBox.get(); // Integer 타입 반환(캐스팅 할 필요 없다.)
+        System.out.println("integer = "+ integer);
+
+        GenericBox<String> stringBox = new GenericBox<String>();
+        stringBox.set("Hello");
+        String s = stringBox.get();
+        System.out.println("s = " + s);
     }
 }
