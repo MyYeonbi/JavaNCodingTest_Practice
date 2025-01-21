@@ -20,5 +20,8 @@ public class BoxMain3 {
         doubleBox.set(3.14);
         Double doubleBox = doubleBox.get();
         System.out.println("doubleBox = " + doubleBox);
+
+        //타입 추론 : 생성하는 제네릭 타입 생략 가능
+        GenericBox<Integer> integerBox2 = new GenericBox<>();
     }
 }
