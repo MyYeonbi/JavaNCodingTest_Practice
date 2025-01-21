@@ -19,7 +19,7 @@ public class BoxMain3 {
         GenericBox<Double> doubleBox = new GenericBox<>();
         doubleBox.set(3.14);
         //중복된 변수 이름으로 컴파일 오류
-        Double doubleBox = doubleBox.get();
+        Double doubleBox2 = doubleBox.get();
         System.out.println("doubleBox = " + doubleBox);
 
         //타입 추론 : 생성하는 제네릭 타입 생략 가능
