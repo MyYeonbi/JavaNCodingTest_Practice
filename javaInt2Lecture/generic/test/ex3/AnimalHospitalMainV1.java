@@ -27,8 +27,8 @@ public class AnimalHospitalMainV1 {
 
         // 문제2 : 개 타입 변환
         dogHospital.set(dog);
-        Animal animal = dogHospital.bigger(new Dog("멍멍이2", 200));
-        System.out.println("biggerDog = " + biggerDog);
+        Animal animal = (Dog) dogHospital.bigger(new Dog("멍멍이2", 200));
+        System.out.println("biggerDog = " + animal);
 
 
     }
