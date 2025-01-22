@@ -6,7 +6,7 @@ import javaInt2Lecture.generic.animal.Cat;
 import javaInt2Lecture.generic.animal.Dog;
 
 public class AnimalHospitalMainV1 {
-    // 타입안전성 문제가 있다. 
+    // 타입안전성 문제가 있다.
 
     public static void main(String[] args) {
         AnimalHospitalV1 dogHospital = new AnimalHospitalV1();
