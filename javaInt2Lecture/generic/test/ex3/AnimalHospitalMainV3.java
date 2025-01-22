@@ -21,5 +21,8 @@ public class AnimalHospitalMainV3 {
         catHospital.set(cat);
         catHospital.checkup();
 
+        // 문제 1 : 개 병원에 고양이 전달
+        dogHospital.set(cat); // 다른 타입 입력 : 컴파일 오류
+
     }
 }
