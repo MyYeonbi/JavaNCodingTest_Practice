@@ -1,13 +1,14 @@
 package javaInt2Lecture.generic.test.ex3;
 
-import javaInt2Lecture.generic.animal.Dog;
+import javaInt2Lecture.generic.animal.Cat;
 
 
-public class DogHospital {
+public class CatHospital {
 
-    private Dog animal;
+    private Cat animal;
 
-    public void set(Dog animal) {
+    public void set(Cat animal) {
+
         this.animal = animal;
     }
 
@@ -17,7 +18,8 @@ public class DogHospital {
         animal.sound();
     }
 
-    public Dog bigger(Dog target) {
+    public Cat bigger(Cat target) {
+
         return animal.getSize() > target.getSize() ? animal : target;
     }
 
