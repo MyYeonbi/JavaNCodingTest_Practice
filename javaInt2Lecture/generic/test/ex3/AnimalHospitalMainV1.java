@@ -1,6 +1,7 @@
 package javaInt2Lecture.generic.test.ex3;
 
 
+import javaInt2Lecture.generic.animal.Animal;
 import javaInt2Lecture.generic.animal.Cat;
 import javaInt2Lecture.generic.animal.Dog;
 
@@ -22,10 +23,11 @@ public class AnimalHospitalMainV1 {
         catHospital.checkup();
 
         //문제1: 개 병원에 고양이를 전달하는 법은?
-        dogHospital.set(cat);
+        dogHospital.set(cat); // 매개변수 체크 실패 : 컴파일 오류가 발생하지 않음.
+
         // 문제2 : 개 타입 변환
         dogHospital.set(dog);
-        Dog biggerDog = dogHospital.bigger(new Dog("멍멍이2", 200));
+        Animal animal = dogHospital.bigger(new Dog("멍멍이2", 200));
         System.out.println("biggerDog = " + biggerDog);
 
 
