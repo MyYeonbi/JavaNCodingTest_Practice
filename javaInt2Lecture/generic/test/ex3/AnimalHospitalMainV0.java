@@ -18,7 +18,7 @@ public class AnimalHospitalMainV0 {
 
         //고양이 병원
         catHospital.set(cat);
-        catHospital.checkup(cat);
+        catHospital.checkup();
 
         //문제1: 개 병원에 고양이를 전달하는 법은?
        // dogHospital.set(cat);  // 다른 타입을 입력하면 컴파일 오류가 발생
