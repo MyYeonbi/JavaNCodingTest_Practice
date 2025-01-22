@@ -23,6 +23,10 @@ public class AnimalHospitalMainV0 {
         //문제1: 개 병원에 고양이를 전달하는 법은?
        // dogHospital.set(cat);  // 다른 타입을 입력하면 컴파일 오류가 발생
 
+        // 문제2 : 개 타입 변환
+        dogHospital.set(dog);
+        Dog biggerDog = dogHospital.bigger(new Dog("멍멍이2", 200));
+        System.out.println("biggerDog = " + biggerDog);
 
 
     }
