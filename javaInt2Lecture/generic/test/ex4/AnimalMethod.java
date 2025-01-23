@@ -10,8 +10,6 @@ public class AnimalMethod {
         System.out.println("동물 크기 : " + t.getSize());
         t.sound();
 
-
-
     }
 
     public static <T extends Animal> T bigger(T t1, T t2) {
