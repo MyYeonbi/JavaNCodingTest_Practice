@@ -9,7 +9,7 @@ public class AnimalHospitalMainV3 {
 
         AnimalHospitalV3 <Dog> dogHospital = new AnimalHospitalV3<>();
         AnimalHospitalV3 <Cat> catHospital = new AnimalHospitalV3<>();
-        AnimalHospitalV3 <Integer> intgerHospital = new AnimalHospitalV3<Integer>();
+        //AnimalHospitalV3 <Integer> intgerHospital = new AnimalHospitalV3<Integer>();
         Dog dog = new Dog("멍멍이1", 100);
         Cat cat = new Cat("냐옹이1", 300);
 
