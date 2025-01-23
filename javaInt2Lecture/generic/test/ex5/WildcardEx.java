@@ -17,4 +17,10 @@ public class WildcardEx {
         T t = box.get();
         System.out.println("이름 = " + t.getName());
     }
+
+    static <T extends Animal> T printAndReturnGeneric(Box<T> box) {
+        T t = box.get();
+        System.out.println("이름 = " + t.getName());
+        return t;
+    }
 }
