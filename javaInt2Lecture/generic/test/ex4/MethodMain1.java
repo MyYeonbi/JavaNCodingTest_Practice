@@ -12,9 +12,9 @@ public class MethodMain1 {
         Integer integerValue = GenericMethod.<Integer>numberMethod(10);
         Double doubleValue = GenericMethod.<Double>numberMethod(20.0);
 
-        Integer result1 = GenericMethod.genericMethod(i);
-        Integer integerValue1 = GenericMethod.<Integer>numberMethod(10);
-        Double doubleValue1 = GenericMethod.<Double>numberMethod(20.0);
+        Integer result2 = GenericMethod.genericMethod(i);
+        Integer integerValue2 = GenericMethod.numberMethod(10);
+        Double doubleValue2 = GenericMethod.numberMethod(20.0);
 
 
 
