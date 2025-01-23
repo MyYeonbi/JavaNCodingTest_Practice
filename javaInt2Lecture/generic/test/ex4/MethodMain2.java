@@ -14,7 +14,7 @@ public class MethodMain2 {
         AnimalMethod.checkup(cat);
 
         Dog targetDog = new Dog("큰 멍멍이", 200);
-        Dog bigger = AnimalMethod.bigger(dog, targetDog);
+        Dog bigger = AnimalMethod.bigger(dog, targetDog); // 타입을 맞춰줘야 함.
         System.out.println("bigger = "+ bigger);
 
 
