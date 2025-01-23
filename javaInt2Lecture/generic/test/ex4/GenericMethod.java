@@ -7,8 +7,13 @@ public class GenericMethod {
         return obj;
     }
 
-    public static <T> T genericMethod(T obj) {
-        System.out.println("Object print = "+ obj);
-        return obj;
+    public static <T> T genericMethod(T t) {
+        System.out.println("Object print = "+ t);
+        return t;
+    }
+
+    public static <T extends  Number> T numberMethod(T t) {
+        System.out.println("Object print = "+ t);
+        return t;
     }
 }
