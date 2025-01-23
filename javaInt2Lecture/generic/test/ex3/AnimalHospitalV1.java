@@ -25,8 +25,8 @@ public class AnimalHospitalV1 {
 
     }
 
-   /* public T bigger(T target) {
+   public T bigger(T target) {
 
         return animal.getSize() > target.getSize() ? animal : target;
-    }*/
+    }
 }
