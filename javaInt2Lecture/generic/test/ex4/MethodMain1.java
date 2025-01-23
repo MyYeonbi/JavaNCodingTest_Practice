@@ -10,6 +10,7 @@ public class MethodMain1 {
         System.out.println("명시적 타입 인자 명시적 전달");
         Integer result = GenericMethod.<Integer>genericMethod(i);
         Integer integerValue = GenericMethod.<Integer>numberMethod(10);
+        Double doubleValue = GenericMethod.<Double>numberMethod(20.0);
 
 
     }
