@@ -11,6 +11,8 @@ public class WildcardEx {
         System.out.println("T = "+ box.get());
     }
 
+
+    /*Box 객체 내부의 데이터를 꺼내 Animal 클래스의 메서드를 안전하게 호출할 수 있는 제네릭 메서드*/
     static <T extends Animal> void printGenericV2(Box<T> box) {
         T t = box.get();
         System.out.println("이름 = " + t.getName());
