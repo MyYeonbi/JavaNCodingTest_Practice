@@ -4,11 +4,11 @@ import javaInt2Lecture.generic.animal.Animal;
 import javaInt2Lecture.generic.animal.Cat;
 
 
-public class AnimalHospitalV1 {
+public class AnimalHospitalV1 <T extends Animal> {
 
-    private Animal animal;
+    private T animal;
 
-    public void set(Animal animal) {
+    public void set(T animal) {
         this.animal = animal;
     }
 
