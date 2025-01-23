@@ -6,4 +6,9 @@ public class GenericMethod {
         System.out.println("Object print = "+ obj);
         return obj;
     }
+
+    public static <T> T genericMethod(T obj) {
+        System.out.println("Object print = "+ obj);
+        return obj;
+    }
 }
