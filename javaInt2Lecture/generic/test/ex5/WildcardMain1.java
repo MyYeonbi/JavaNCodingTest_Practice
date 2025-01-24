@@ -1,5 +1,6 @@
 package javaInt2Lecture.generic.test.ex5;
 
+import javaInt2Lecture.generic.animal.Animal;
 import javaInt2Lecture.generic.animal.Cat;
 import javaInt2Lecture.generic.animal.Dog;
 
@@ -18,5 +19,6 @@ public class WildcardMain1 {
         WildcardEx.printGenericV2(dogBox);
         WildcardEx.printGenericV2(dogBox);
         Dog dog = WildcardEx.printAndReturnGeneric(dogBox);
+        Animal animal = WildcardEx.printAndReturnGeneric(dogBox);
     }
 }
