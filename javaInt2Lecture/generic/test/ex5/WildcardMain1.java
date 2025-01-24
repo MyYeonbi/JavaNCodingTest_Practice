@@ -18,7 +18,10 @@ public class WildcardMain1 {
 
         WildcardEx.printGenericV2(dogBox);
         WildcardEx.printGenericV2(dogBox);
+
         Dog dog = WildcardEx.printAndReturnGeneric(dogBox);
+        Cat cat = WildcardEx.printAndReturnGeneric(catBox);
+
         Animal animal = WildcardEx.printAndReturnGeneric(dogBox);
     }
 }
