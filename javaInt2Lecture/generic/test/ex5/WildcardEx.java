@@ -11,8 +11,14 @@ public class WildcardEx {
         System.out.println("T = "+ box.get());
     }
 
+    //Box<Dog>, Box<Cat>, Box<Object>
     static void printWildcardV1(Box<?> box) {
-        System.out.println("> =" + box.get());
+        System.out.println("? =" + box.get());
+    }
+
+    static void printWildcardV2(Box<? extends Animal> box) {
+        Animal animal = box.get();
+        System.out.println("T = "+ box.get());
     }
 
     /*Box 객체 내부의 데이터를 꺼내 Animal 클래스의 메서드를 안전하게 호출할 수 있는 제네릭 메서드*/
