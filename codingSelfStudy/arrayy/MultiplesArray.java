@@ -1,13 +1,19 @@
 package codingSelfStudy.arrayy;
 
+import java.util.Arrays;
+
 public class MultiplesArray {
     public long[] solution(int x, int n) {
-        long[] result = new long[n]; // 결과를 저장할 배열 생성
+        long[] result = new long[n];
 
-        for (int i = 0; i < n; i++) { // 0부터 n-1까지 반복
-            result[i] = (long) x * (i + 1); // 각 요소에 x의 배수를 계산
+        for (int i = 0; i < n; i++){
+            result[i] = (long) x * (i +1);
         }
+        return result;
+    }
 
-        return result; // 결과 배열 반환
+    public static void main(String[] args) {
+        MultiplesArray multiplesArray = new MultiplesArray();
+        System.out.println(Arrays.toString(multiplesArray.solution(2, 5)));
     }
 }
