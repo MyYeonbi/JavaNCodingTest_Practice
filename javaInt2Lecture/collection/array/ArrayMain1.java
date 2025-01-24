@@ -18,6 +18,8 @@ public class ArrayMain1 {
         arr[2]= 10;
         System.out.println(Arrays.toString(arr));
 
+        System.out.println("==index 조회: O(1) ==");
+
 
 
 
