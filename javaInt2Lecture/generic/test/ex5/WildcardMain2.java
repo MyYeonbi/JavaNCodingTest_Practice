@@ -14,6 +14,7 @@ public class WildcardMain2 {
         //Animal 포함 상위 타입 전달 가능
         writeBox(objBox);
         writeBox(animalBox);
+        //writeBox(dogBox); //하한이 Animal인 타입은 불가능. 
 
 
     }
