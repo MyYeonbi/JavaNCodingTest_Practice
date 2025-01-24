@@ -12,6 +12,8 @@ public class WildcardMain2 {
         Box<Cat> catBox = new Box<>();
 
         //Animal 포함 상위 타입 전달 가능
+        writeBox(objBox);
+        writeBox(animalBox);
 
 
     }
