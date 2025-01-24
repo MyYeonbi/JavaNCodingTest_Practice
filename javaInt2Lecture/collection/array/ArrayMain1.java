@@ -13,5 +13,13 @@ public class ArrayMain1 {
         arr[2] = 3;
         System.out.println(Arrays.toString(arr));
 
+        //index 변경 : 0(1)
+        System.out.println("== index 변경: 0(1) ==");
+        arr[2]= 10;
+        System.out.println(Arrays.toString(arr));
+
+
+
+
     }
 }
