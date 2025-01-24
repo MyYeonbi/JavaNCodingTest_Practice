@@ -1,7 +1,6 @@
-package javaInt2Lecture.generic.test.ex3;
+package javaInt2Lecture.generic.ex3;
 
 import javaInt2Lecture.generic.animal.Animal;
-import javaInt2Lecture.generic.animal.Cat;
 
 
 public class AnimalHospitalV1 <T extends Animal> {

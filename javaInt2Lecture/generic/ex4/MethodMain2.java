@@ -1,9 +1,8 @@
-package javaInt2Lecture.generic.test.ex4;
+package javaInt2Lecture.generic.ex4;
 
 
 import javaInt2Lecture.generic.animal.Cat;
 import javaInt2Lecture.generic.animal.Dog;
-import javaInt2Lecture.generic.test.ex4.AnimalMethod;
 
 
 public class MethodMain2 {

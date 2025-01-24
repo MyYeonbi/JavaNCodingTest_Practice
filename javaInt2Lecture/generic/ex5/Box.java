@@ -1,4 +1,4 @@
-package javaInt2Lecture.generic.test.ex5;
+package javaInt2Lecture.generic.ex5;
 
 public class Box <T>{
 

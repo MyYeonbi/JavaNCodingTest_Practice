@@ -1,4 +1,4 @@
-package javaInt2Lecture.generic.test.ex5;
+package javaInt2Lecture.generic.ex5;
 
 import javaInt2Lecture.generic.animal.Animal;
 import javaInt2Lecture.generic.animal.Cat;

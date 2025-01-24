@@ -1,4 +1,4 @@
-package javaInt2Lecture.generic.test.ex3;
+package javaInt2Lecture.generic.ex3;
 
 import javaInt2Lecture.generic.animal.Dog;
 

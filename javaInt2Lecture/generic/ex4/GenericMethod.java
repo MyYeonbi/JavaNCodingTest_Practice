@@ -1,4 +1,4 @@
-package javaInt2Lecture.generic.test.ex4;
+package javaInt2Lecture.generic.ex4;
 
 public class GenericMethod {
 
