@@ -1,4 +1,4 @@
-package codingSelfStudy.math;
+package codingSelfStudy.math.evenOdd;
 
 public class EvenOddCounter {
     public int[] solution(int[] num_list) {
