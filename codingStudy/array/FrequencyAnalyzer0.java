@@ -1,5 +1,6 @@
 package codingStudy.array;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -38,11 +39,13 @@ public class FrequencyAnalyzer0 {
             int frequency = entry.getValue();
 
             // 최대 빈도 갱신 및 숫자 비교
-            if (frequency > maxFrequency || (frequency == maxFrequency && number == minFrequency)) {
+            if (frequency > maxFrequency || (frequency == maxFrequency && number < minFrequency)) {
                 maxFrequency = frequency;
                 minFrequency = number;
             }
 
         }
+        //결과 반환
+        return new int[]{maxFrequency, minFrequency};
     }
 }
