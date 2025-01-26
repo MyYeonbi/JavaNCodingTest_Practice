@@ -25,6 +25,11 @@ public class FrequencyAnalyzer1 {
                     count++;
                 }
             }
+            // 최대 등장 횟수 갱신
+            if (count > maxCount || (count == maxCount && arr[i] < minNumber)) {
+                maxCount = count;
+                minNumber = arr[i];
+            }
         }
 
 
