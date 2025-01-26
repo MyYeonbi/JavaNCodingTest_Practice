@@ -3,7 +3,7 @@ package codingStudy.array.frequecy;
 import java.util.Arrays;
 
 public class FrequencyAnalyzer1 {
-    *//*2중 for문을 사용하여 배열에서의 최대 빈도의 요소와 그 빈도수를 찾는 문제*//*
+    //*2중 for문을 사용하여 배열에서의 최대 빈도의 요소와 그 빈도수를 찾는 문제*//*
     public static void main(String[] args) {
         int[] tc1 = new int[]{1, 2, 3, 2, 2, 4, 5, 2, 6, 4};
         int[] tc2 = new int[]{1, 2, 3, 4, 5};
