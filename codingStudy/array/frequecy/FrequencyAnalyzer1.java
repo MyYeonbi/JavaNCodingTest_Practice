@@ -31,6 +31,8 @@ public class FrequencyAnalyzer1 {
                 minNumber = arr[i];
             }
         }
+        // 결과 반환
+        return new int[]{minNumber, maxCount};
 
 
 
