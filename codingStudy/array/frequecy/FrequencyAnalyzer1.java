@@ -14,8 +14,10 @@ public class FrequencyAnalyzer1 {
         System.out.println(Arrays.toString(solution(tc3))); // [2, 2]
     }
     public static int[] solution(int[] arr ){
-        int maxCount = 0;
-        int minNumber = Integer.MAX_VALUE;
+        int maxCount = 0; // 최대 등장 횟수
+        int minNumber = Integer.MAX_VALUE; // 최대 등장 횟수의 숫자 중 가장 작은 값
+
+        // 배열 순회.
 
 
 
