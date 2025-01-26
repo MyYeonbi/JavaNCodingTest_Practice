@@ -1,4 +1,4 @@
-package codingStudy.array;
+package codingStudy.array.frequecy;
 
 import java.util.Arrays;
 import java.util.HashMap;
