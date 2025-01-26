@@ -34,6 +34,14 @@ public class FrequencyAnalyzer0 {
             * 예를들어, frequencyMap이 {1=2, 2=4, 3=1}이라면 :
             * entrySet()은 [Map.Entry(1,2), Map.Entry(2,4), Map.Entry(3,1)]를 반환.
             * */
+            int number = entry.getKey();
+            int frequency = entry.getValue();
+
+            // 최대 빈도 갱신 및 숫자 비교
+            if (frequency > maxFrequency || (frequency == maxFrequency && number == minFrequency)) {
+                maxFrequency = frequency;
+                minFrequency = number;
+            }
 
         }
     }
