@@ -18,6 +18,14 @@ public class FrequencyAnalyzer1 {
         int minNumber = Integer.MAX_VALUE; // 최대 등장 횟수의 숫자 중 가장 작은 값
 
         // 배열 순회.
+        for (int i = 0; i < arr.length; i++) {
+            int count = 0;
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    count++;
+                }
+            }
+        }
 
 
 
