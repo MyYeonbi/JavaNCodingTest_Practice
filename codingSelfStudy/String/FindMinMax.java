@@ -22,6 +22,9 @@ public class FindMinMax {
                 if (num > max) max = num;
 
             } catch (NumberFormatException e) {
+                /* 문자열을 숫자로 변환하려고 시도했지만,
+                * 문자열이 숫자로 변환할 수 없는 형식일 때 사용하는
+                * NumberFormatException .*/
                 // 만약 숫자가 아닌 값이 있다면 예외 처리
                 throw new IllegalArgumentException("Invalid input: "+ numStr);
 
