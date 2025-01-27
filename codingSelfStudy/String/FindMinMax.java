@@ -4,6 +4,7 @@ public class FindMinMax {
     public String solution (String s) {
         // 1. 입력 문자열을 공백 기준으로 나누기.
         String[] numbers = s.split(" ");
+        // String열을 특정 기준으로 나누는 메서드는 s.split("기준");
 
         // 2. 초기값 설정
         int min = Integer.MAX_VALUE;
@@ -13,6 +14,7 @@ public class FindMinMax {
         for (String numStr : numbers) {
             try{
                 int num = Integer.parseInt(numStr);
+
                 if (num < min) min = num;
                 if (num > max) max = num;
 
