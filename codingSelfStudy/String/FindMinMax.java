@@ -14,6 +14,9 @@ public class FindMinMax {
         for (String numStr : numbers) {
             try{
                 int num = Integer.parseInt(numStr);
+                /*String을 Int형으로 바꾸는 것은
+                for-each문을 사용했기에 요소의 하나만이 선택이 되기 때문에
+                String 배열을 어떻게 Int형으로 바꿀지를 생각하지 않아도 됨. */
 
                 if (num < min) min = num;
                 if (num > max) max = num;
