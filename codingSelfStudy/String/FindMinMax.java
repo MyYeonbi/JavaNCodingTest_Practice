@@ -32,5 +32,9 @@ public class FindMinMax {
         }
         // 4. 결과를 "min max" 형식의 문자열로 반환
         return min + " " + max;
+        /* Int형을 String으로 변환하려고 할 때는
+        * String.valueOf(int)를 사용해도 되지만,
+        * [ int + string = string 타입] 이 되는 걸 이용해도 된다.
+        * 여기서 " "는 String 형식*/
     }
 }
