@@ -16,8 +16,9 @@ public class JadenCaseConverter {
 
             // 현재 문자가 단어의 시작인지 확인. 조건 기반 분기 처리를 통해 문제를 세분화(단어의 시작과 나머지 처리 분리).
             if (isStartOfWord) {
-                // 현재 문자가 알파벳인지 확인. 입력값 종류에 따라 다르게 처리. 'Character.isLetter'은 문자가 알파벳인지 확인하는 자바 내장 메서드 
+                // 현재 문자가 알파벳인지 확인. 입력값 종류에 따라 다르게 처리. 'Character.isLetter'은 문자가 알파벳인지 확인하는 자바 내장 메서드
                 if (Character.isLetter(currentChar)) {
+                    // StringBuilder.append메서드 사용과 Character.toUpperCase 메서드 사용을 통해 현재 문자를 대분자로 변환. 
                     result.append(Character.toUpperCase(currentChar));
                 } else {
                     result.append(currentChar); // 숫자 또는 특수 문자 처리
