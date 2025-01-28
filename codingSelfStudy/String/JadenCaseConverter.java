@@ -27,6 +27,7 @@ public class JadenCaseConverter {
                 // 현재 문자가 단어의 첫 문자가 아니므로 플래그를 변경 - 상태 업데이트
                 isStartOfWord = false; // 단어가 시작었음을 표시
             } else {
+                
                 result.append(Character.toLowerCase(currentChar));
             }
 
