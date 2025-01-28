@@ -36,6 +36,7 @@ public class JadenCaseConverter {
                 isStartOfWord = true; // 다음 단어의 시작임을 표시
             }
         }
+        //결과를 문자열로 변환하여 반환.
         return result.toString();
     }
     public static void main(String[] args) {
