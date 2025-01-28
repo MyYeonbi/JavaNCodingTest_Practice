@@ -24,6 +24,7 @@ public class JadenCaseConverter {
                     // 알파벳이 아닌 문자는 변환 없이 그대로 결과에 추가.- 숫자와 특수 문자 예외 처리.
                     result.append(currentChar); // 숫자 또는 특수 문자 처리
                 }
+                // 현재 문자가 단어의 첫 문자가 아니므로 플래그를 변경 - 상태 업데이트
                 isStartOfWord = false; // 단어가 시작었음을 표시
             } else {
                 result.append(Character.toLowerCase(currentChar));
