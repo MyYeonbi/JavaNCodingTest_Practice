@@ -29,5 +29,18 @@ public class JadenCaseConverter {
         }
         return result.toString();
     }
+    public static void main(String[] args) {
+        JadenCaseConverter solution = new JadenCaseConverter();
+
+        String test1 = "3people unFollowed me";
+        String test2 = "for the last week";
+        String test3 = "hello world ";
+        String test4 = " ";
+
+        System.out.println(solution.solution(test1)); // "3people Unfollowed Me"
+        System.out.println(solution.solution(test2)); // "For The Last Week"
+        System.out.println(solution.solution(test3)); // "Hello World "
+        System.out.println(solution.solution(test4)); // " "
+    }
 
 }
