@@ -2,7 +2,9 @@ package codingSelfStudy.String;
 
 public class JadenCaseConverter {
     public String solution(String s) {
+        // 변환된 결과 문자열을 저장하기에는 StringBuilder 객체를 생성하는 것이 좋다. 문자열 변경 작업에 최적화된 클래스이기 때문이다. 
         StringBuilder result = new StringBuilder();
+
 
         // 이전 문자가 공백인지 여부를 확인하기 위한 변수
         boolean isStartOfWord = true;
