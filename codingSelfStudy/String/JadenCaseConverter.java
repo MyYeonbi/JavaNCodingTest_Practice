@@ -6,9 +6,10 @@ public class JadenCaseConverter {
         StringBuilder result = new StringBuilder();
 
 
-        // 단어의 시작 여부 추적하기 위한 플래그 변수. 
+        // 단어의 시작 여부 추적하기 위한 플래그 변수.
         boolean isStartOfWord = true;
 
+        // 입력 문자열 s를 처음부터 끝까지 탐색하기 위한 반복문
         for (int i = 0; i < s.length(); i++) {
             char currentChar = s.charAt(i);
 
