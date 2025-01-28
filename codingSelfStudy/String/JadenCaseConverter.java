@@ -14,7 +14,7 @@ public class JadenCaseConverter {
             //현재 탐색중인 문자를 변수 currentChar에 저장.
             char currentChar = s.charAt(i);
 
-            // 단어의 첫 문장 처리
+            // 현재 문자가 단어의 시작인지 확인. 조건 기반 분기 처리를 통해 문제를 세분화(단어의 시작과 나머지 처리 분리).
             if (isStartOfWord) {
                 if (Character.isLetter(currentChar)) {
                     result.append(Character.toUpperCase(currentChar));
