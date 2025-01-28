@@ -11,6 +11,7 @@ public class JadenCaseConverter {
 
         // 입력 문자열 s를 처음부터 끝까지 탐색하기 위한 반복문
         for (int i = 0; i < s.length(); i++) {
+            //현재 탐색중인 문자를 변수 currentChar에 저장.
             char currentChar = s.charAt(i);
 
             // 단어의 첫 문장 처리
