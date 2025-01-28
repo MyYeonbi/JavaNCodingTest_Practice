@@ -31,7 +31,7 @@ public class JadenCaseConverter {
                 result.append(Character.toLowerCase(currentChar));
             }
 
-            // 공백 확인
+            // 공백 확인. 공백일 경우 다음 문자는 단어의 시작이므로 플래그를 변경.
             if ( currentChar == ' ') {
                 isStartOfWord = true; // 다음 단어의 시작임을 표시
             }
