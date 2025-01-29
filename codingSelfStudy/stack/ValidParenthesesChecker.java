@@ -15,9 +15,10 @@ public class ValidParenthesesChecker {
                 // 만약에 열린 괄호라면 닫히는 괄호가 올 때까지 대기해야 하므로 스택에 저장.
                 // stack.push(ch)는 현재 문자를 스택에 추가.
             } else {
-                // 현재 문자가 닫힌 괄호라면 열린 괄호와 짝을 이루는지 확인해야 한다. 
+                // 현재 문자가 닫힌 괄호라면 열린 괄호와 짝을 이루는지 확인해야 한다.
                 if (stack.isEmpty()) {
                     return false;
+                    // 닫힌 괄호가 나왔을때 짝을 맞출 열린 괄호가 없으면 잘못된 괄호 배열이라 false 리턴.
                 }
                 stack.pop();
 
