@@ -27,6 +27,8 @@ public class ValidParenthesesChecker {
             }
         }
         return stack.isEmpty();
+        /* 문자열을 모두 확인한 후, 스택이 비어 있다면 올바른 괄호이다.
+        *  비어 있지 않다면, 여는 괄호가 남아 있다는 뜻이므로 잘못된 괄호 배열이다. */
     }
 
     public static void main(String[] args) {
