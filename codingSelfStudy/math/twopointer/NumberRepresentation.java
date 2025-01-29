@@ -28,6 +28,7 @@ public class NumberRepresentation {
             }
         }
         return count;
+        //n을 표현하는 경우의 수를 반환.
 
     }
 
