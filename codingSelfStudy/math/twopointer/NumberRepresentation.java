@@ -19,6 +19,7 @@ public class NumberRepresentation {
                     //합이 n과 같은 경우 처리.
                     count++;
                     break;
+                    // 경우의 수 증가 및 내부 루프 종료. sum이 n과 같으므로 더 이상의 합 계산 불필요. 내부 루프 종료
                 }
                 if (sum > n) {
                     break;
