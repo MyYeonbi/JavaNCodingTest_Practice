@@ -25,7 +25,9 @@ public class ZeroRemoverAndBinaryConverter {
 
             int lengthAfter = s.length();
             //0을 제거한 후의 문자열 길이를 저장.
+
             removeZero += (lengthBefore - lengthAfter);
+            // 제거된 0의 개수를 removeZero 변수에 누적. 복합 대입 연산자가 쓰임.
             s = Integer.toBinaryString(lengthAfter);
             count++;
         }
