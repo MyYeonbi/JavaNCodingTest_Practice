@@ -23,6 +23,7 @@ public class NumberRepresentation {
                 }
                 if (sum > n) {
                     break;
+                    // sum이 n보다 커지면 불필요한 계산을 피하기 위해 반복문 탈출.
                 }
             }
         }
