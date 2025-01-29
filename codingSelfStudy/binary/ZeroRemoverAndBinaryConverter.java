@@ -28,7 +28,9 @@ public class ZeroRemoverAndBinaryConverter {
 
             removeZero += (lengthBefore - lengthAfter);
             // 제거된 0의 개수를 removeZero 변수에 누적. 복합 대입 연산자가 쓰임.
+
             s = Integer.toBinaryString(lengthAfter);
+            // lengthAfter 값을 2진수 문자열로 변환하여 s에 저장. Integer.toBinaryString(int number) -> 정수를 이진수 문자열로 변환하는 메서드
             count++;
         }
 
