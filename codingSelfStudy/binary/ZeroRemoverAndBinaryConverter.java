@@ -16,6 +16,7 @@ public class ZeroRemoverAndBinaryConverter {
         // 제거된 0의 개수를 저장하는 변수.
 
         while (!s.equals("1")) {
+            // 문자열 s가 "1"이 될 때까지 반복 실행.
             int lengthBefore = s.length();
             s = s.replace("0","");
             int lengthAfter = s.length();
