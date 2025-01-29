@@ -1,6 +1,7 @@
 package codingSelfStudy.stack;
 
 import java.util.Stack;
+//Stack은 LIFO (나중에 들어온게 제일 먼저 나온다.)
 
 public class ValidParenthesesChecker {
     public boolean solution(String s) {
