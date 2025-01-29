@@ -8,6 +8,7 @@ public class NumberRepresentation {
         for (int start = 1; start <= n; start++) {
             // 외부 반복문(시작 숫자 설정)
             int sum = 0;
+            // 합 변수 초기화. 현재 연속된 자연수들의 합을 저장할 변수.
 
             for (int num = start; num <= n; num++){
                 sum += num;
