@@ -9,6 +9,7 @@ public class ValidParenthesesChecker {
         //stack 변수를 선언하고 새로운 객체를 생성하면서, 괄호를 저장하는 스택 자료구조.
 
         for (char ch : s.toCharArray()) {
+            // s를 문자 배열로 변환하고,이를 ch라는 문자로 하나씩 순회.
             if (ch == '(') {
                 stack.push(ch);
             } else {
