@@ -24,6 +24,7 @@ public class ZeroRemoverAndBinaryConverter {
             // 문자열에서 "0"을 모두 제거. replace.("0","")-> "0"을 빈 문자열("")로 치환하여 삭제.
 
             int lengthAfter = s.length();
+            //0을 제거한 후의 문자열 길이를 저장.
             removeZero += (lengthBefore - lengthAfter);
             s = Integer.toBinaryString(lengthAfter);
             count++;
