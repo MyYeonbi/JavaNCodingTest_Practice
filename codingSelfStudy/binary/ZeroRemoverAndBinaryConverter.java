@@ -11,8 +11,9 @@ public class ZeroRemoverAndBinaryConverter {
     public int[] solution(String s) {
 
         int count = 0;
-        // 몇 번 변환을 했는지 저장하는 변수. 
+        // 몇 번 변환을 했는지 저장하는 변수.
         int removeZero = 0;
+        // 제거된 0의 개수를 저장하는 변수.
 
         while (!s.equals("1")) {
             int lengthBefore = s.length();
