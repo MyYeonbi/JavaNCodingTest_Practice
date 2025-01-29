@@ -13,9 +13,10 @@ public class NumberRepresentation {
             for (int num = start; num <= n; num++){
                 // 내부 반복문(연속된 자연수의 합 계산)- start부터 n까지 연속된 자연수를 더하면서 목표값 n과 비교. 또 다른 for 반복문을 사용하여 내부 루프 실행.
                 sum += num;
-                // 현재 숫자를 sum에 누적하여 연속된 합 계산. 
+                // 현재 숫자를 sum에 누적하여 연속된 합 계산.
 
                 if (sum ==n) {
+                    //합이 n과 같은 경우 처리.
                     count++;
                     break;
                 }
