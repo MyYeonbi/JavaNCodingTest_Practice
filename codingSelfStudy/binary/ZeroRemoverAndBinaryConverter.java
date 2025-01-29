@@ -33,10 +33,11 @@ public class ZeroRemoverAndBinaryConverter {
             // lengthAfter 값을 2진수 문자열로 변환하여 s에 저장. Integer.toBinaryString(int number) -> 정수를 이진수 문자열로 변환하는 메서드
 
             count++;
-            // 변환 횟수를 1증가. 
+            // 변환 횟수를 1증가.
         }
 
         return new int[]{count, removeZero};
+        // 변환 횟수와 제거된 0의 개수를 배열에 담아 반환 new int[]{} -> 정수 배열을 생성하여 반환
 
     }
 
