@@ -12,6 +12,8 @@ public class ValidParenthesesChecker {
             // s를 문자 배열로 변환하고,이를 ch라는 문자로 하나씩 순회.
             if (ch == '(') {
                 stack.push(ch);
+                // 만약에 열린 괄호라면 닫히는 괄호가 올 때까지 대기해야 하므로 스택에 저장.
+                // stack.push(ch)는 현재 문자를 스택에 추가.
             } else {
                 if (stack.isEmpty()) {
                     return false;
