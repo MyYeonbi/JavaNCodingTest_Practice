@@ -1,4 +1,4 @@
-package codingSelfStudy.collection.list;
+package codingSelfStudy.collections.list;
 
 import java.util.ArrayList;
 import java.util.List;

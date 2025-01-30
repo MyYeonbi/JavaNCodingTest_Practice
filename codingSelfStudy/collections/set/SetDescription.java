@@ -1,4 +1,4 @@
-package codingSelfStudy.collection.set;
+package codingSelfStudy.collections.set;
 import java.util.*;
 public class SetDescription {
     /* Set도 Collection을 구현하는 인터페이스.
