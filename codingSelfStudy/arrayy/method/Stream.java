@@ -29,7 +29,22 @@ public class Stream {
         /*map()은 각 요소를 변환하는 과정이고, collect()는 최종 결과를 리스트로 수집하는 것. */
         System.out.println(result2);
 
+
         // (1) 어떤 경우에 Stream을 사용할까? 1-1) 배열이나 컬렉션을 다룰 때(배열,List,Set,Map)같은 데이터 집합을 한번에 가공!
+        List<Integer> numbers = Arrays.asList(1,2,3,4,5,5,5);
+        List<Integer> evenNumbers = numbers.stream()
+                                            .filter(n -> n % 2 == 0) //filter() : 조건에 맞는 요소만 남김
+                                            .collect(Collectors.toList()); // .collect() : 리스트로 변환
+
+        // (2) 정렬을 간편하게 할 때 - 배열이나 리스트를 정렬할 때도 Stream이 유용하다.
+
+        // 숫자 정렬하기
+        int[] arr = {5,3,9,1,3};
+        int[] sortedArr = Arrays.stream(arr)
+                                .sorted() // 정렬
+                                .toArray(); // 배열로 변환
+
+        System.out.println(Arrays.toString(sortedArr));
 
 
     }
