@@ -82,5 +82,11 @@ public class Stream {
         System.out.println(max); //8
 
 
+        // (6) 중복 제거 - 중복된 값 제거하기
+        List<Integer> num3 = Arrays.asList(1,2,2,3,4,4,5);
+
+        List<Integer> distictNumbers = num3.stream().
+
+
     }
 }
