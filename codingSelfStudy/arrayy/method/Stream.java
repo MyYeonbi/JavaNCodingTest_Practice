@@ -76,16 +76,19 @@ public class Stream {
 
         // (5) 최대/최소값 찾기
            // 최대값 찾기.
-        List <Integer> num2 = Arrays.asList(3,6,2,8,5);
+        List <Integer> num5 = Arrays.asList(3,6,2,8,5);
 
-        int max = num2.stream().mapToInt(n->n).max().orElse(-1)
+        int max = num5.stream().mapToInt(n->n).max().orElse(-1);
         System.out.println(max); //8
 
 
         // (6) 중복 제거 - 중복된 값 제거하기
         List<Integer> num3 = Arrays.asList(1,2,2,3,4,4,5);
 
-        List<Integer> distictNumbers = num3.stream().
+        List<Integer> distictNumbers = num3.stream()
+                                           .distinct() //중복 제거
+                                           .collect(Collectors.toList());
+        System.out.println(distictNumbers);
 
 
     }
