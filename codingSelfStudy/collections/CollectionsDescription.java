@@ -1,5 +1,6 @@
 package codingSelfStudy.collections;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -48,6 +49,14 @@ public class CollectionsDescription {
         List<String> words = Arrays.asList("apple", "banana", "apple", "orange", "apple");
         int count = Collections.frequency(words, "apple"); // "apple" 등장 횟수
         System.out.println(count); // 3
+
+
+        //7.Collections.copy()- 리스트 복사, 리스트를 다른 리스트로 복사할 때 사용. 단,복사 대상 리스트 크기가 원복 리스트보다 크거나 같아야 함.
+        List<String> src = Arrays.asList("A","B","C");
+        List<String> dest = new ArrayList<>(Arrays.asList("X","Y","Z"));
+
+        Collections.copy(dest,src);
+        System.out.println(dest);// [A, B, C]
 
     }
 }
