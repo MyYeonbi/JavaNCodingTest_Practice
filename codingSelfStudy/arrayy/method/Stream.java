@@ -66,7 +66,7 @@ public class Stream {
                 * - Stream<T> : 객체형 스트림(ex: Stream<Integer>, Stream<String>)
                 * - IntStream : 기본형 int 스트림(메모리 절약, 성능 최적화)
                 * - 문제점 : Stream<Integer>는 기본형이 아닌 Integer 객체를 다루기 때문에 숫자를 처리할 때 박싱/언박싱 오버헤드 발생!
-                *           sum(), average(), max() 같은 숫자 관련 메서드를 사용하려면 IntStream이 필요하다.*/
+                *           sum(), average(), max() 같은 숫자 관련 메서드를 사용하려면 IntStream이 필요하다...*/
                                   .average()
 
                                   .orElse(0);
