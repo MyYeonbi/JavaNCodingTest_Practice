@@ -1,4 +1,5 @@
 package codingSelfStudy.arrayy.method;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -14,6 +15,11 @@ public class AsList {
         System.out.println(list);
 
         //list.add(6); //UnsupportedOperationException 발생!Arrays.asList()로 만든 리스트는 크기 변경이 불가능
+
+        // 고정크기 기반의 배열을 리스트로 바꿨을때 크기가 변경이 안되지만 new ArrayList<>(list)로 변경하면 크기 변경 가능!
+        List<Integer> list2 = new ArrayList<>(Arrays.asList(3,3,3,3));
+        list2.add(6);
+        System.out.println(list2);
     }
 
 }
