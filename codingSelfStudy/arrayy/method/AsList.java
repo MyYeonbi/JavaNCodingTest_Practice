@@ -14,12 +14,20 @@ public class AsList {
         List<Integer> list = Arrays.asList(1,2,3,4,5);
         System.out.println(list);
 
-        //list.add(6); //UnsupportedOperationException 발생!Arrays.asList()로 만든 리스트는 크기 변경이 불가능
+        //(1) list.add(6); //UnsupportedOperationException 발생!Arrays.asList()로 만든 리스트는 크기 변경이 불가능
 
         // 고정크기 기반의 배열을 리스트로 바꿨을때 크기가 변경이 안되지만 new ArrayList<>(list)로 변경하면 크기 변경 가능!
         List<Integer> list2 = new ArrayList<>(Arrays.asList(3,3,3,3));
         list2.add(6);
         System.out.println(list2);
+
+
+        //(2) int[] 배열을 Arrays.asList()에 넣으면 문제가 생긴다. 배열 전체가 하나의 요소로 취급된다.
+        int[] arr = {1,1,1,1};
+        List<int[]> list3 = Arrays.asList(arr);
+        System.out.println(list3); // [[I@1b6d3586] (int 배열 1개가 리스트 요소로 들어감)
+
+        //
     }
 
 }
