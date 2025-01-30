@@ -37,14 +37,24 @@ public class Stream {
                                             .collect(Collectors.toList()); // .collect() : 리스트로 변환
 
         // (2) 정렬을 간편하게 할 때 - 배열이나 리스트를 정렬할 때도 Stream이 유용하다.
-
-        // 숫자 정렬하기
+              // 숫자 정렬하기
         int[] arr = {5,3,9,1,3};
         int[] sortedArr = Arrays.stream(arr)
                                 .sorted() // 정렬
                                 .toArray(); // 배열로 변환
 
         System.out.println(Arrays.toString(sortedArr));
+
+
+        // (3) 데이터 변환(Mapping) - 각 요소를 변환할 때도 Stream이 강력.
+             // 모든 숫자를 문자열로 변환하기.
+        List <Integer> num = Arrays.asList(1,2,3);
+        List <String> stringNumbers = num.stream()
+                                          .map(n -> "Number: " +n)
+                                          // 문자열 변환
+                                          .collect(Collectors.toList());
+
+        System.out.println(stringNumbers);
 
 
     }
