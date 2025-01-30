@@ -2,6 +2,7 @@ package codingSelfStudy.arrayy.method;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /*List<T> list = Arrays.asList(T... elements);
 * ✔ 가변 인자를 받아 리스트로 변환
@@ -31,7 +32,8 @@ public class AsList {
         Integer[] arr2 = {1,2,3,4,5,5,};
         List<Integer> list4 = Arrays.asList(arr2); // 올바르게 변환됨.
 
-        /
+        // (2-2) 또는 Stream 사용
+        List <Integer> list5 = Arrays.stream(arr).boxed().collect(Collectors.toList());
      }
 
 }
