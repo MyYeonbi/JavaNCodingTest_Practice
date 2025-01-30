@@ -20,5 +20,12 @@ public class CollectionsDescription {
         // 내림차순, 특정 기준 정렬 가능. Comparator를 사용하여 정렬 방식을 직접 지정
         List<Integer> num = Arrays.asList(5,2,6,2,3);
         Collections.sort(num,Collections.reverseOrder()); // 내림차순으로 정렬
+        System.out.println(num);
+
+        //3. Collections.reverse() - 리스트 뒤집기(리스트의 요소 순서를 반대로 뒤집음,정렬이 아니라 단순히 현재 순서를 거꾸로 바꿈)
+        List<String> letters = Arrays.asList("A","B","C","D");
+
+        Collections.reverse(letters);
+        System.out.println(letters); //[D, C, B, A]
     }
 }
