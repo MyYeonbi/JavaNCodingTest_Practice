@@ -33,5 +33,15 @@ public class CollectionsDescription {
 
         Collections.shuffle(num1);
         System.out.println(num1);
+
+        // 5.Collections.max(Collection<T> coll) & Collections.min()-최대/최소값 찾기
+        List<Integer> num2 = Arrays.asList(4,2,8,1,5);
+
+        int max = Collections.max(num2);
+        int min = Collections.min(num2);
+
+        System.out.println("최대값 : " + max); //8
+        System.out.println("최소값 : " + min); //1
+
     }
 }
