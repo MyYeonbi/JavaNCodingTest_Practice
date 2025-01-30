@@ -3,6 +3,7 @@ package codingSelfStudy.arrayy.method;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Stream {
     /* Arrays.stream(B)
@@ -19,5 +20,13 @@ public class Stream {
             result.add(num * 2); // 각 요소를 2배로 변환
         }
         System.out.println(result);
+
+        // 하지만 Stream을 사용하면?
+        List <Integer> list2 = Arrays.asList(1,2,3,4,4,4);
+        List <Integer> result2 = list2.stream()
+                .map(num -> num * 2)//요소를 2배로 변환
+                .collect(Collectors.toList());// 리스트로 변환
+        System.out.println(result2);
+
     }
 }
