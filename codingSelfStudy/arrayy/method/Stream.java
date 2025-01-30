@@ -68,8 +68,14 @@ public class Stream {
                 * - 문제점 : Stream<Integer>는 기본형이 아닌 Integer 객체를 다루기 때문에 숫자를 처리할 때 박싱/언박싱 오버헤드 발생!
                 *           sum(), average(), max() 같은 숫자 관련 메서드를 사용하려면 IntStream이 필요하다...*/
                                   .average()
-
+                                  //평균 계산
                                   .orElse(0);
+                                  // 값이 없을 경우 0을 반환.
+        System.out.println(avg); //25.0
+
+
+        // (5) 최대/최소값 찾기
+           // 최대값 찾기.
 
 
     }
