@@ -29,5 +29,8 @@ public class Stream {
         /*map()은 각 요소를 변환하는 과정이고, collect()는 최종 결과를 리스트로 수집하는 것. */
         System.out.println(result2);
 
+        // (1) 어떤 경우에 Stream을 사용할까? 1-1) 배열이나 컬렉션을 다룰 때(배열,List,Set,Map)같은 데이터 집합을 한번에 가공!
+
+
     }
 }
