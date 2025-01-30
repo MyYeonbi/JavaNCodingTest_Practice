@@ -27,5 +27,11 @@ public class CollectionsDescription {
 
         Collections.reverse(letters);
         System.out.println(letters); //[D, C, B, A]
+
+        //4.Collections.shuffle(List<T>list) - 리스트 요소 무작위 섞기,내부적으로 Random클래스를 사요아여 무작위 배치.
+        List<Integer> num1 = Arrays.asList(1,2,3,4,5);
+
+        Collections.shuffle(num1);
+        System.out.println(num1);
     }
 }
