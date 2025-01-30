@@ -61,7 +61,7 @@ public class Stream {
         List<Integer> num2 = Arrays.asList(10,20,30,40);
 
         double avg = num2.stream().mapToInt(n -> n) // Stream<Integer>를 IntStream으로 변환
-                /*.mapToInt(n->n)을 왜 쓰는 걸까?
+                /*.mapToInt(n->n)을 왜 쓰는 걸까?!!
                 * stream<Integer>를 IntStream으로 변환하는 역할을 한다.
                 * - Stream<T> : 객체형 스트림(ex: Stream<Integer>, Stream<String>)
                 * - IntStream : 기본형 int 스트림(메모리 절약, 성능 최적화)
