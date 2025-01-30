@@ -1,4 +1,4 @@
-package codingSelfStudy.hash;
+package codingSelfStudy.collection.set.hashSet;
 
 import java.util.HashSet;
 import java.util.Set;
