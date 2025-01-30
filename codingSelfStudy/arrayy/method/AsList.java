@@ -27,7 +27,11 @@ public class AsList {
         List<int[]> list3 = Arrays.asList(arr);
         System.out.println(list3); // [[I@1b6d3586] (int 배열 1개가 리스트 요소로 들어감)
 
-        //
-    }
+        // (2-1) 해결 방법 : 기본형 int[]이 아닌 Integer[] 사용!
+        Integer[] arr2 = {1,2,3,4,5,5,};
+        List<Integer> list4 = Arrays.asList(arr2); // 올바르게 변환됨.
+
+        /
+     }
 
 }
