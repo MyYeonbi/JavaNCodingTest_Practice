@@ -18,5 +18,7 @@ public class CollectionsDescription {
 
         //2. Collections.sort(List<T>list,Comparator<T>c) - 원하는 방식으로 정렬
         // 내림차순, 특정 기준 정렬 가능. Comparator를 사용하여 정렬 방식을 직접 지정
+        List<Integer> num = Arrays.asList(5,2,6,2,3);
+        Collections.sort(num,Collections.reverseOrder()); // 내림차순으로 정렬
     }
 }
