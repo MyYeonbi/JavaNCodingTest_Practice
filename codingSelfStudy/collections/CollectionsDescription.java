@@ -58,5 +58,11 @@ public class CollectionsDescription {
         Collections.copy(dest,src);
         System.out.println(dest);// [A, B, C]
 
+
+        //8.Collections.replaceAll(List<T> list, T oldVal, T newVal)-특정 값 변경(리스트에서 특정 값을 다른 값으로 변경)
+        List<String> names = new ArrayList<>(Arrays.asList("Alice", "Bob", "Alice", "Charlie"));
+        Collections.replaceAll(names, "Alice", "Alex");
+        System.out.println(names); // [Alex, Bob, Alex, Charlie]
+
     }
 }
