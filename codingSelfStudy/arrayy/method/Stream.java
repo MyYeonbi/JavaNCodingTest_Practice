@@ -56,6 +56,21 @@ public class Stream {
 
         System.out.println(stringNumbers);
 
+        // (4) 데이터 집계(sum,count,average 등)
+           // 평균값 구하기.
+        List<Integer> num2 = Arrays.asList(10,20,30,40);
+
+        double avg = num2.stream().mapToInt(n -> n) // Stream<Integer>를 IntStream으로 변환
+                /*.mapToInt(n->n)을 왜 쓰는 걸까?
+                * stream<Integer>를 IntStream으로 변환하는 역할을 한다.
+                * - Stream<T> : 객체형 스트림(ex: Stream<Integer>, Stream<String>)
+                * - IntStream : 기본형 int 스트림(메모리 절약, 성능 최적화)
+                * - 문제점 : Stream<Integer>는 기본형이 아닌 Integer 객체를 다루기 때문에 숫자를 처리할 때 박싱/언박싱 오버헤드 발생!
+                *           sum(), average(), max() 같은 숫자 관련 메서드를 사용하려면 IntStream이 필요하다.*/
+                                  .average()
+
+                                  .orElse(0);
+
 
     }
 }
