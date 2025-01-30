@@ -43,5 +43,11 @@ public class CollectionsDescription {
         System.out.println("최대값 : " + max); //8
         System.out.println("최소값 : " + min); //1
 
+
+        // 6.Collections.frequency(Collection<T>coll,T item)-특정 요소의 등장 횟수 세기.List,Set 같은 모든 컬렉션에서 사용가능.
+        List<String> words = Arrays.asList("apple", "banana", "apple", "orange", "apple");
+        int count = Collections.frequency(words, "apple"); // "apple" 등장 횟수
+        System.out.println(count); // 3
+
     }
 }
