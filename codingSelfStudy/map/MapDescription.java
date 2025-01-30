@@ -6,6 +6,15 @@ import java.util.*;
 * - 키는 중복 불가능. 값은 중복 가능.
 * - 요소의 순서 유지 X (LinkedHashMap은 순서 유지)*/
 public class MapDescription {
+    public static void main(String[] args) {
+        Map<String,Integer> map = new HashMap<>();
+        map.put("A",1);
+        map.put("B",2);
+        map.put("A",3); // 기존 A의 값이 3으로 변경됨.
+
+        System.out.println(map);
+        // {A=3, B=2} (순서는 랜덤)
+    }
 
 
 }
