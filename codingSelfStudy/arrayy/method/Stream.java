@@ -26,6 +26,7 @@ public class Stream {
         List <Integer> result2 = list2.stream()
                 .map(num -> num * 2)//요소를 2배로 변환
                 .collect(Collectors.toList());// 리스트로 변환
+        /*map()은 각 요소를 변환하는 과정이고, collect()는 최종 결과를 리스트로 수집하는 것. */
         System.out.println(result2);
 
     }
