@@ -76,6 +76,10 @@ public class Stream {
 
         // (5) 최대/최소값 찾기
            // 최대값 찾기.
+        List <Integer> num2 = Arrays.asList(3,6,2,8,5);
+
+        int max = num2.stream().mapToInt(n->n).max().orElse(-1)
+        System.out.println(max); //8
 
 
     }
