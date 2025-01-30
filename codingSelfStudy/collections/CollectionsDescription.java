@@ -15,5 +15,8 @@ public class CollectionsDescription {
 
         Collections.sort(numbers);// 오름차순 정렬
         System.out.println(numbers);// [1, 2, 3, 5, 9]
+
+        //2. Collections.sort(List<T>list,Comparator<T>c) - 원하는 방식으로 정렬
+        // 내림차순, 특정 기준 정렬 가능. Comparator를 사용하여 정렬 방식을 직접 지정
     }
 }
