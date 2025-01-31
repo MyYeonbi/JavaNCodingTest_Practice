@@ -16,9 +16,10 @@ public class JadenCaseConverter {
             // 4. 단어의 첫 문장 처리
             if (isStartOfWord) {
                 if(Character.isLetter(currentChar)) {
-                    // 4-1 첫 단어가 알파벳인지 아닌지를 또 if문을 통해 나눔. 
+                    // 4-1 첫 단어가 알파벳인지 아닌지를 또 if문을 통해 나눔.
                     result.append(Character.isUpperCase(currentChar));
                 } else {
+                    // 4-2 알파벳이라면 Character.isUpperCase를 통해 대문자로 바꾸고, 아니라면 그냥 추가
                     result.append(currentChar);
                 }
                 isStartOfWord = false;
