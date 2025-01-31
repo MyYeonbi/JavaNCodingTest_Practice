@@ -9,5 +9,13 @@ public class JadenCaseConverter {
         //2. 이전 문자가 공백인지 여부를 확인하는 변수.
         boolean isStartOfWord = true;
 
+        //3. String의 한 글자씩 순회돌기.- s.charAt(i)를 이용하여 한 글자씩 변수에 저장.
+        for (int i = 0; i <s.length();i++) {
+            char currentChar = s.charAt(i);
+
+            // 4. 단
+
+        }
+
     }
 }
