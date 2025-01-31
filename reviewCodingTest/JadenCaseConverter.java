@@ -13,7 +13,15 @@ public class JadenCaseConverter {
         for (int i = 0; i <s.length();i++) {
             char currentChar = s.charAt(i);
 
-            // 4. 단
+            // 4. 단어의 첫 문장 처리
+            if (isStartOfWord) {
+                if(Character.isLetter(currentChar)) {
+                    result.append(Character.isUpperCase(currentChar));
+                } else {
+                    result.append(currentChar);
+                }
+                isStartOfWord = false;
+            }
 
         }
 
