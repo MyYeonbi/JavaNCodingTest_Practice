@@ -4,5 +4,10 @@ package reviewCodingTest;
 public class JadenCaseConverter {
     public String solution(String s) {
         //1. 리턴할 String을 담을 StringBuilder.
+        StringBuilder result = new StringBuilder();
+
+        //2. 이전 문자가 공백인지 여부를 확인하는 변수.
+        boolean isStartOfWord = true;
+
     }
 }
