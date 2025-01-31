@@ -8,7 +8,17 @@ public class FindMinMax {
         //2. 초기값 설정
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
-        
+
+
+        // 3. 배열 순회하면서 최댓값, 최솟값 찾기
+        for(String str : numbers) {
+            try{
+                int num =
+            }
+        }catch(NumberFormatException e) {
+                throw new IllegalArgumentException("Invalid input :" + str);
+            }
+
 
     }
 }
