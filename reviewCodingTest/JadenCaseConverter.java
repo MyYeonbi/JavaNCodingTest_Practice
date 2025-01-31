@@ -22,8 +22,11 @@ public class JadenCaseConverter {
                     // 4-2 알파벳이라면 Character.isUpperCase를 통해 대문자로 바꾸고, 아니라면 그냥 추가
                     result.append(currentChar);
                 }
-                // 4-3 이전 문자가 공백인지를 확인하는 불린값을 false로 돌리기. 
+                // 4-3 이전 문자가 공백인지를 확인하는 불린값을 false로 돌리기.
                 isStartOfWord = false;
+            } else {
+                // 5. 이전 문자가 공백아 아닐시를 처리하는 가장 큰 틀의 if문의 else문 - 소문자로 바꾸는 메서드 사용. .
+                result.append(Character.toLowerCase(currentChar));
             }
 
         }
