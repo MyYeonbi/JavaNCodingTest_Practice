@@ -11,5 +11,12 @@ public class MinimizeArrayProductSum {
         //2. B를 내림차순으로 정렬
         Integer[] BInteger = Arrays.stream(B).boxed().toArray(Integer[] :: new);
         Arrays.sort(BInteger,Collections.reverseOrder());
+
+        int answer = 0;
+        for (int i = 0; i < A.length; i++) {
+            // A의 작은 값 * B의 큰값
+            answer += A[i] * BInteger[i];
+        }
+        return answer;
     }
 }
