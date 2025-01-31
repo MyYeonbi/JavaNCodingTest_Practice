@@ -17,9 +17,9 @@ public class JadenCaseConverter {
             if (isStartOfWord) {
                 if(Character.isLetter(currentChar)) {
                     // 4-1 첫 단어가 알파벳인지 아닌지를 또 if문을 통해 나눔.
-                    result.append(Character.isUpperCase(currentChar));
+                    result.append(Character.toUpperCase(currentChar));
                 } else {
-                    // 4-2 알파벳이라면 Character.isUpperCase를 통해 대문자로 바꾸고, 아니라면 그냥 추가
+                    // 4-2 알파벳이라면 Character.toUpperCase를 통해 대문자로 바꾸고, 아니라면 그냥 추가
                     result.append(currentChar);
                 }
                 // 4-3 이전 문자가 공백인지를 확인하는 불린값을 false로 돌리기.
@@ -31,10 +31,17 @@ public class JadenCaseConverter {
 
             // 6. 공백 확인하는 if문을 만들어 내부 함수에 이전 문자가 공백인 불린값을 true로 돌림.
             if ( currentChar == ' ') {
-                isStartOfWord = true;
+                isStartOfWord = true; // 다음 단어의 시작임을 표시.
             }
 
         }
+        return result.toString();
+
+    }
+
+    public static void main(String[] args) {
+        JadenCaseConverter j = new JadenCaseConverter();
+        System.out.println(j.solution("i'm hungry"));
 
     }
 }
