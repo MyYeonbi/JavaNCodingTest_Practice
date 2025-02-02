@@ -18,6 +18,7 @@ public class ConsecutiveSumCounter_easy {
                 // 지금까지의 합계 sum에 num을 더한다. 연속된 숫자를 하나씩 더해서 합계를 만든다.
 
                 if (sum == n) {
+                    // 합계가 n과 같아졌다면, 연속된 숫자로 n을 만드는 방법을 찾은 것.
                     count++;
                     break;
                 }
