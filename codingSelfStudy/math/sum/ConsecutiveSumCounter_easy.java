@@ -13,7 +13,9 @@ public class ConsecutiveSumCounter_easy {
 
             for (int num = start; sum < n; num++) {
                 // start부터 숫자를 하나씩 더하면서 합계가 n에 도달하는지 확인한다. num은 start 부터 시작하고 숫자를 하나씩 늘려가며 더한다. 조건 sum < n은 합계가 n보다 작을 때까지만 계속 더한다.
+
                 sum += num;
+                // 지금까지의 합계 sum에 num을 더한다. 연속된 숫자를 하나씩 더해서 합계를 만든다.
 
                 if (sum == n) {
                     count++;
