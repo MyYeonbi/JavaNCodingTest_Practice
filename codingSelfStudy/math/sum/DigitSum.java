@@ -1,4 +1,4 @@
-package codingSelfStudy.math;
+package codingSelfStudy.math.sum;
 
 public class DigitSum {
     public int solution(int n) {
