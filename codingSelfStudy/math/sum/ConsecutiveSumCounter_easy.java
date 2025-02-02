@@ -19,7 +19,9 @@ public class ConsecutiveSumCounter_easy {
 
                 if (sum == n) {
                     // 합계가 n과 같아졌다면, 연속된 숫자로 n을 만드는 방법을 찾은 것.
+
                     count++;
+                    //count를 1씩 증가시켜서 방법의 개수를 기록한다.
                     break;
                 }
             }
