@@ -9,9 +9,10 @@ public class ConsecutiveSumCounter_easy {
             // n을 만들기 위해 모든 숫자를 시작점으로 본다.start라는 변수를 1로 시작해서, n까지 하나씩 증가시킨다.
 
             int sum = 0;
-            //숫자들을 더한 결과(합계)를 저장하는 변수. 
+            //숫자들을 더한 결과(합계)를 저장하는 변수.
 
             for (int num = start; sum < n; num++) {
+                // start부터 숫자를 하나씩 더하면서 합계가 n에 도달하는지 확인한다. num은 start 부터 시작하고 숫자를 하나씩 늘려가며 더한다. 조건 sum < n은 합계가 n보다 작을 때까지만 계속 더한다.
                 sum += num;
 
                 if (sum == n) {
