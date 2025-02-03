@@ -23,7 +23,7 @@ public class ConsecutiveSumCounter_easy {
                     count++;
                     //count를 1씩 증가시켜서 방법의 개수를 기록한다.
                     break;
-                    // 더 이상 숫자를 더할 필요가 없으니 다음 시작점으로 넘어가도록 멈춘다. 
+                    // 더 이상 숫자를 더할 필요가 없으니 다음 시작점으로 넘어가도록 멈춘다.
                 }
             }
         }
