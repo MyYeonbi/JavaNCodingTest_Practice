@@ -6,7 +6,7 @@ public class CarpetSizeFinder {
 
         // width >= height 조건이 있으므로 큰 width부터 탐색
         for(int width = total; width >= 1; width--) {
-            if (total % width = 0) { //width가 total의 약수인지 확인
+            if (total % width == 0) { //width가 total의 약수인지 확인
                 int height = total / width; // 대응하는 height 계산
 
                 // (width - 2 ) * (height - 2) == yellow를 만족하는지 확인
