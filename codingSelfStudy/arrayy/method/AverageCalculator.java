@@ -14,7 +14,7 @@ public class AverageCalculator {
 
     public static void main(String[] args) {
         AverageCalculator a = new AverageCalculator();
-        System.out.println(a.solution(new int[1,3,4,5]);
+        System.out.println(a.solution(new int[] {1, 3, 4, 5}));
     }
 }
 
