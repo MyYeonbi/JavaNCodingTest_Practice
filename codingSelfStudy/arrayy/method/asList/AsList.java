@@ -29,9 +29,14 @@ public class AsList {
 /*✅ 4. Arrays.asList()로 만든 리스트의 특징
 
 🚨 주의할 점! 🚨
-Arrays.asList()로 만든 리스트는 배열에 연결된 형태라 크기를 바꿀 수 없어!*/
+Arrays.asList()로 만든 리스트는 배열에 연결된 형태라 크기를 바꿀 수 없어!
+        List<String> list = Arrays.asList("a", "b", "c");
 
-        
+        list.add("d");  // 오류 발생! (UnsupportedOperationException)
+        list.remove("b"); // 오류 발생!
+        */
+
+
 
     }
 
