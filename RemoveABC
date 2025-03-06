@@ -1,0 +1,17 @@
+public class RemoveABC {
+    public String removePattern(String s) {
+        StringBuilder stack = new StringBuilder();
+        for (char c : s.toCharArray()) {
+            stack.append(c);
+            if (stack.length() >= 3 && stack.substring(stack.length() - 3).equals("abc")) {
+                stack.delete(stack.length() - 3, stack.length());
+            }
+        }
+        return stack.toString();
+    }
+
+    public static void main(String[] args) {
+        RemoveABC solution = new RemoveABC();
+        System.out.println(solution.removePattern("abccbaabc")); // 출력: "cba"
+    }
+}
