@@ -1,4 +1,4 @@
-package codingStudy.dfs;
+package codingStudy.dfsBfs;
 import java.util.ArrayList;
 import java.util.List;
 
