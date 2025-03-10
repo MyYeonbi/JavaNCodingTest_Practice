@@ -11,6 +11,7 @@ class TargetNumberBFS {
     while (!queue.isEmpty()) {
       int[] current = queue.poll();
       int sum = current[0];
+      int index = current[1];
 
       if (index == numbers.length) { // 모든 숫자를 사용한 경우
         if (sum == target) answer++;
