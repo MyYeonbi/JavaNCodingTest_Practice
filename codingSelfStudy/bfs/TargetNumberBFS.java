@@ -15,6 +15,7 @@ class TargetNumberBFS {
       if (index == numbers.length) { // 모든 숫자를 사용한 경우
         if (sum == target) answer++;
       } else {
+        queue.add(new int[]{sum + numbers[index], index + 1});
         queue.add(new int[]{sum - numbers[index], index + 1});
       }
     }
