@@ -1,5 +1,6 @@
 package codingStudy.maratonCom;
 
+
 import java.util.Arrays;
 
 class MarathonCompletion {
