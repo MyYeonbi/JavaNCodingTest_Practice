@@ -17,7 +17,7 @@ public class HonorHall {
       answer[i] = list.get(list.size()-1); // 현재 명예의 전당 최하위 점수 저장
     }
 
-    return answer; //리턴 빠뜨리면 컴파일 에러. 
+    return answer; //리턴 빠뜨리면 컴파일 에러.
   }
 
 }
