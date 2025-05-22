@@ -27,6 +27,7 @@ public class TwoPointer {
         }
       }
 
+      System.out.println(count);
     }
   }
 
