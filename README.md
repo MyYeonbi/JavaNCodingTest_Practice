@@ -41,7 +41,7 @@
 
 <img width="111" alt="image" src="https://github.com/user-attachments/assets/4fd51c9a-4fad-4e69-b831-fb61e7d55d77" />
 
-- KB국민은행 IT's Your Life 6개월 과정 수료 후, 강사님과 동기분들과 주 1회 진행하는 알고리즘 스터디..
+- KB국민은행 IT's Your Life 6개월 과정 수료 후, 강사님과 동기분들과 주 1회 진행하는 알고리즘 스터디.
 
 
 
